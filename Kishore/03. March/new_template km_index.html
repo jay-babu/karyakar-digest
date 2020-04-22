@@ -1,0 +1,590 @@
+<!DOCTYPE html>
+<head>
+    <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+    <meta content="initial-scale=1.0" name="viewport">
+    <meta content="telephone=no" name="format-detection">
+    <link href='https://fonts.googleapis.com/css?family=Roboto+Condensed:700' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Roboto:300' rel='stylesheet' type='text/css'>
+    <style>
+        body {
+            font-family: Avenir, sans-serif;
+            background-color: black;
+            color: white;
+            width: 100vw;
+            font-size: 12px;
+            min-height: 100vh;
+            overflow: auto;
+            justify-content: center;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .page {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            max-width: 700px;
+            background-color: black;
+        }
+
+        .header {
+            width: 100vw;
+            max-width: 700px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .title {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            flex-direction: column;
+        }
+
+        h1 {
+            text-align: center;
+            font-size: 2.4em;
+            font-weight: 700;
+            margin: .5vh 0;
+        }
+
+        .paramAnand {
+            width: 100vw;
+            max-width: 700px;
+            height: auto;
+        }
+
+        .quotation {
+            font-size: 1.2em;
+        }
+
+        .sections {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            font-weight: 300;
+            font-size: 1.9em;
+            margin: 1vh 0;
+        }
+
+        .sectionBody {
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 100%;
+            font-size: 1.4em;
+        }
+
+        .btn {
+            position: relative;
+            height: 10vh;
+        }
+
+        .sectionTitle {
+            text-align: center;
+            width: 100%;
+            font-size: 1.4em;
+            background: rgb(0, 65, 163);
+            background: radial-gradient(circle, rgba(0, 65, 163, 1) 57%, rgba(0, 0, 0, 0.9766281512605042) 100%);
+        }
+
+        .sectionBody .list {
+            font-size: 1em;
+        }
+    </style>
+    <title>Email</title>
+</head>
+
+<body>
+<div class="page">
+    <div style="width: 100vw;
+        max-width: 700px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;">
+        <img alt="Akshar Purushottam Murti"
+             src="http://kishore.na.baps.org/websites/emaildigest/standard/images/common/apm_digest.png"
+             height="40">
+        <img style="width: 100vw; max-width: 700px; height: auto;" alt="Param Anand" border="0" hspace="0"
+             src="http://kishore.na.baps.org/websites/emaildigest/standard/images/digest/km-header-2019.jpg">
+    </div>
+
+    <div class="title" style="display: flex; flex-wrap: wrap; align-items: center; flex-direction: column;">
+        <h1>Week of [currentmonth] [currentdaynumber]<sup>th</sup></h1>
+        <p class="quotation">“...There is nothing greater than worshipping God.” <strong>- Jetalpur 5</strong></p>
+    </div>
+
+    <!--    <section>-->
+    <!--        <h2 class="sections">New</h2>-->
+    <!--        <hr>-->
+    <!--        <div class="sectionBody">-->
+    <!--            <h2 class="sectionTitle">2020 Virtual Sabha - Attendance</h2>-->
+    <!--            <p>Moving forward, reporting karyakars should begin to record sabha attendance in BKMS based on virtual post-->
+    <!--                sabha goshti attendance.</p>-->
+    <!--        </div>-->
+    <!--        <div class="sectionBody">-->
+    <!--            <h2 class="sectionTitle">2020 Virtual Post-Sabha - BK Karyakar Goshthis</h2>-->
+    <!--            <p>A few select centers through North America conducted virtual sabha Goshthis directly following the-->
+    <!--                national virtual kishore-kishori sabha the past two weeks. They were very well received because it-->
+    <!--                allowed the kishores to discuss the sabha content to increase retention along with the ability to spend-->
+    <!--                time together virtually.-->
+    <!--            </p>-->
+    <!--            <p>-->
+    <!--                Starting the weekend of 3/29 (this weekend) all centers-->
+    <!--                should hold virtual post sabha Goshthis after the-->
+    <!--                virtual Kishore sabha. Your respective mandal/vicharan-->
+    <!--                Pujya Sant will try to attend as many virtual sabha-->
+    <!--                Goshthis as possible. Your RC will help coordinate Pujya-->
+    <!--                Sant presence/labh for your mandal.-->
+    <!--            </p>-->
+    <!--            <p>Suggested planning tips</p>-->
+    <!--            <ul class="sectionBody list">-->
+    <!--                <li>-->
+    <!--                    Tag team with your RC to decide on what medium to be-->
+    <!--                    used for Virtual Sabha Goshthis (Zoom, etc)-->
+    <!--                </li>-->
+    <!--                <li>-->
+    <!--                    Create a plan for informing your mandal kishores so-->
+    <!--                    they know this will be happening after the virtual-->
+    <!--                    sabha ends-->
+    <!--                </li>-->
+    <!--                <li>-->
+    <!--                    Instructions on how to join the virtual sabha goshti-->
+    <!--                    (with relevant links) should be sent out to all the-->
+    <!--                    kishores and your RC by the Friday of every week.-->
+    <!--                </li>-->
+    <!--                <li>-->
+    <!--                    For larger mandals, consider splitting the Goshthis-->
+    <!--                    into smaller sub-groups (example, K1/K2 gosthis can-->
+    <!--                    be separate)-->
+    <!--                </li>-->
+    <!--            </ul>-->
+    <!--        </div>-->
+
+    <!--        <div class="sectionBody">-->
+    <!--            <h2 class="sectionTitle">2020 Virtual Post-Sabha - Goshthi Guidelines</h2>-->
+    <!--            <p>Due to the current limitation on public gatherings, karyakar goshthis will continue virtually for each-->
+    <!--                center. BK Pujya Santo will be attending their centers’ karyakar goshthis based on their availability.-->
+    <!--                Local Coordinators should reach out to their BK Pujya Sant and Regional Coordinator (RC) to schedule a-->
+    <!--                date/time that works for the Pujya Sant and the karyakar team. Local karyakar teams should still-->
+    <!--                continue to take attendance during these goshthis and record the data on BKMS.</p>-->
+    <!--        </div>-->
+
+    <!--        <div class="sectionBody">-->
+    <!--            <h2 class="sectionTitle">2020 Virtual BK Karyakar Goshthi - April</h2>-->
+    <!--            <p>Yoganand: <em>“Yog”</em> means association. We have attained the yog of Bhagwan through the Satpurush.-->
+    <!--                This yog is known as prapti and to experience happiness from this yog is known as praptino kef. Bhagwan-->
+    <!--                Swaminarayan has explained in <i>Vachanamrut Jetalpur 5</i> that “there is<strong>nothing</strong>-->
+    <!--                greater than worshipping God.” We have attained Bhagwan himself on this Earth and there is nothing great-->
+    <!--                now to achieve. Any misery we experience now is only a lack of our understanding. How can we tackle any-->
+    <!--                obstacles that stop us from constantly experiencing praptino kef and how can we keep this prapti in mind-->
+    <!--                at all times to truly feel the highest for of happiness?.</p>-->
+    <!--            <div class="btn">-->
+    <!--                <a href="#">-->
+    <!--                    <span></span>-->
+    <!--                    <span></span>-->
+    <!--                    <span></span>-->
+    <!--                    <span></span>-->
+    <!--                    Text-->
+    <!--                </a>-->
+    <!--            </div>-->
+    <!--        </div>-->
+    <!--    </section>-->
+    <!--    <section>-->
+    <!--    </section>-->
+
+</div>
+<!--<table border="0" cellpadding="0" cellspacing="0" width="100%">-->
+<!--    &lt;!&ndash;    <tbody>&ndash;&gt;-->
+<!--    &lt;!&ndash;            <tr>&ndash;&gt;-->
+<!--    &lt;!&ndash;                <td align="center" style="background-color: #b2b4b6; " valign="top">&ndash;&gt;-->
+<!--    &lt;!&ndash;                    <table align="center" bgcolor="#008aff" border="0" cellpadding="0" cellspacing="0" style="background-color: #b2b4b6; " width="600">&ndash;&gt;-->
+<!--    &lt;!&ndash;                        <tr>&ndash;&gt;-->
+<!--    &lt;!&ndash;                            <td valign="top">&ndash;&gt;-->
+<!--    &lt;!&ndash;                                <table align="center" border="0" cellpadding="0" cellspacing="0">&ndash;&gt;-->
+<!--    &lt;!&ndash;                                    <tbody>&ndash;&gt;-->
+<!--    &lt;!&ndash;                                        <tr>&ndash;&gt;-->
+<!--    &lt;!&ndash;                                            <td style="line-height: 27px; font-family: Arial, Tahoma, Helvetica, sans-serif; color: rgb(255, 255, 255); text-align: center;">&ndash;&gt;-->
+<!--    &lt;!&ndash;                                                HAVING TROUBLE?&ndash;&gt;-->
+<!--    &lt;!&ndash;                                                <a href="http://bal.na.baps.org/websites/emaildigest/2020/march/17/index.html" style="text-decoration: none; color: rgb(255, 255, 255);">&ndash;&gt;-->
+<!--    &lt;!&ndash;                                                    VIEW ONLINE&ndash;&gt;-->
+<!--    &lt;!&ndash;                                                </a>&ndash;&gt;-->
+<!--    &lt;!&ndash;                                            </td>&ndash;&gt;-->
+<!--    &lt;!&ndash;                                            <td align="left" style="padding-left: 5px;" valign="middle">&ndash;&gt;-->
+<!--    &lt;!&ndash;                                                <img alt="arrow1" border="0" hspace="0" src="http://bal.na.baps.org/websites/emaildigest/standard/images/arrow1.png" style="max-width: 10px;" vspace="0" width="10"/>&ndash;&gt;-->
+<!--    &lt;!&ndash;                                            </td>&ndash;&gt;-->
+<!--    &lt;!&ndash;                                        </tr>&ndash;&gt;-->
+<!--    &lt;!&ndash;                                    </tbody>&ndash;&gt;-->
+<!--    &lt;!&ndash;                                </table>&ndash;&gt;-->
+<!--    &lt;!&ndash;                            </td>&ndash;&gt;-->
+<!--    &lt;!&ndash;                        </tr>&ndash;&gt;-->
+<!--    &lt;!&ndash;                    </table>&ndash;&gt;-->
+<!--    &lt;!&ndash;                </td>&ndash;&gt;-->
+<!--    &lt;!&ndash;            </tr>&ndash;&gt;-->
+<!--    &lt;!&ndash;    </tbody>&ndash;&gt;-->
+<!--    &lt;!&ndash;    <tr>&ndash;&gt;-->
+<!--    &lt;!&ndash;        <td>&ndash;&gt;-->
+<!--    &lt;!&ndash;            <table align="center" border="0" cellpadding="0" cellspacing="0" style="background-color:#eeefef;"&ndash;&gt;-->
+<!--    &lt;!&ndash;                   width="100%">&ndash;&gt;-->
+<!--    &lt;!&ndash;                <tr>&ndash;&gt;-->
+<!--    &lt;!&ndash;                    <td align="center" valign="top" width="100%">&ndash;&gt;-->
+<!--    &lt;!&ndash;                        <table align="center" border="0" cellpadding="0" cellspacing="0"&ndash;&gt;-->
+<!--    &lt;!&ndash;                               style="background-color:#ffffff; " width="600">&ndash;&gt;-->
+<!--    &lt;!&ndash;                            <tr>&ndash;&gt;-->
+<!--    &lt;!&ndash;                                <td valign="middle" align="center">&ndash;&gt;-->
+<!--    &lt;!&ndash;                                    <table align="center" border="0" cellpadding="0" cellspacing="0" width="100%">&ndash;&gt;-->
+<!--    &lt;!&ndash;                                        <tr>&ndash;&gt;-->
+<!--    &lt;!&ndash;                                            <td align="center" valign="top" style="padding: 10px 0 10px 0;">&ndash;&gt;-->
+<!--    &lt;!&ndash;                                                <img border="none" alt="Akshar Purushottam Murti"&ndash;&gt;-->
+<!--    &lt;!&ndash;                                                     src="http://kishore.na.baps.org/websites/emaildigest/standard/images/common/apm_digest.png"&ndash;&gt;-->
+<!--    &lt;!&ndash;                                                     height="40"/>&ndash;&gt;-->
+<!--    &lt;!&ndash;                                            </td>&ndash;&gt;-->
+<!--    &lt;!&ndash;                                        </tr>&ndash;&gt;-->
+<!--    &lt;!&ndash;                                    </table>&ndash;&gt;-->
+<!--    &lt;!&ndash;                                </td>&ndash;&gt;-->
+<!--    &lt;!&ndash;                            </tr>&ndash;&gt;-->
+<!--    &lt;!&ndash;                            <tr>&ndash;&gt;-->
+<!--    &lt;!&ndash;                                <td align="center" valign="top">&ndash;&gt;-->
+<!--    &lt;!&ndash;                                    <img alt="image_header_600x300" border="0" hspace="0"&ndash;&gt;-->
+<!--    &lt;!&ndash;                                         src="http://kishore.na.baps.org/websites/emaildigest/standard/images/digest/km-header-2019.jpg"&ndash;&gt;-->
+<!--    &lt;!&ndash;                                         width="600"/>&ndash;&gt;-->
+<!--    &lt;!&ndash;                                </td>&ndash;&gt;-->
+<!--    &lt;!&ndash;                            </tr>&ndash;&gt;-->
+<!--    &lt;!&ndash;                        </table>&ndash;&gt;-->
+<!--    &lt;!&ndash;                    </td>&ndash;&gt;-->
+<!--    &lt;!&ndash;                </tr>&ndash;&gt;-->
+<!--    &lt;!&ndash;            </table>&ndash;&gt;-->
+<!--    &lt;!&ndash;        </td>&ndash;&gt;-->
+<!--    &lt;!&ndash;    </tr>&ndash;&gt;-->
+<!--    <tr>-->
+<!--        <td>-->
+<!--            <table align="center" bgcolor="#ffffff" border="0" cellpadding="0" cellspacing="10"-->
+<!--                   style="background-color: #ffffff;" width="600">-->
+<!--                <tr>-->
+<!--                    <td style="line-height: 22px; font-family: Arial,Tahoma, Helvetica, sans-serif;text-align:center;font-weight:normal;">-->
+<!--                        <table border="0" cellpadding="0" cellspacing="5"-->
+<!--                               style="background-color:#ffffff;text-align: center;" width="560">-->
+<!--                            <tr>-->
+<!--                                <td>-->
+<!--                                        <span style="font-size: 28px; color:#555555; font-weight:bold;">-->
+<!--                                             Week of [currentmonth] [currentdaynumber]<sup>th</sup>-->
+<!--                                        </span>-->
+<!--                                </td>-->
+<!--                            </tr>-->
+<!--                            <tr>-->
+<!--                                <td style="font-size: 13px; color:#a3a2a2;">-->
+<!--                                    “...There is nothing greater than worshipping God.”-->
+<!--                                    <span style="font-style: italic;font-weight: bold;"><br/>Jetalpur 5</span>-->
+<!--                                </td>-->
+<!--                            </tr>-->
+<!--                        </table>-->
+<!--                    </td>-->
+<!--                </tr>-->
+<!--            </table>-->
+<!--        </td>-->
+<!--    </tr>-->
+<!--    <tr>-->
+<!--        <td>-->
+<!--            <table align="center" bgcolor="#ffffff" border="0" cellpadding="0" cellspacing="0"-->
+<!--                   style="background-color: #ffffff;" width="600">-->
+<!--                <tr>-->
+<!--                    <td style="line-height: 22px;font-family:Arial,Tahoma, Helvetica, sans-serif;font-weight:normal;">-->
+<!--                        <table align="center" bgcolor="#ffffff" border="0" cellpadding="0" cellspacing="0" width="600">-->
+<!--                            <tr>-->
+<!--                                <td valign="top" style="padding:10px;">-->
+<!--                                    <table align="center" border="0" cellpadding="0" cellspacing="5" width="560"-->
+<!--                                           style=" border-bottom:1px solid #c7c7c7; ">-->
+<!--                                        <tr>-->
+<!--                                            <td align="center">-->
+<!--                                                <span style="font-size:26px;font-family: Roboto, sans-serif;font-weight: bold;color:#555555;">New</span>-->
+<!--                                            </td>-->
+<!--                                        </tr>-->
+<!--                                    </table>-->
+<!--                                </td>-->
+<!--                            </tr>-->
+<!--                            <tr>-->
+<!--                                <td>-->
+<!--                                    <table align="center" bgcolor="#ffffff" border="0" cellpadding="0" cellspacing="0"-->
+<!--                                           style="background-color:#ffffff; margin-top: 20px;" width="100%">-->
+<!--                                        <tr>-->
+<!--                                            <td valign="top" width="100%" style="padding-bottom: 10px;">-->
+<!--                                                <table border="0" cellpadding="5" cellspacing="0" width="100%"-->
+<!--                                                       style="background-color:#555555;">-->
+<!--                                                    <tr>-->
+<!--                                                        <td align="center" valign="top">-->
+<!--                                                            <span style="color: #ffffff;font-weight: bold;font-size: 17px;">2020 Virtual Sabha - Attendance</span>-->
+<!--                                                        </td>-->
+<!--                                                    </tr>-->
+<!--                                                </table>-->
+<!--                                            </td>-->
+<!--                                        </tr>-->
+<!--                                        <tr>-->
+<!--                                            <td valign="top" width="100%" style=" font-size: 13px;">-->
+<!--                                                <table align="left" border="0" cellpadding="0" cellspacing="0"-->
+<!--                                                       width="100%">-->
+<!--                                                    <tr>-->
+<!--                                                        <td style="color:#7e7e7e; text-align:left; padding:0 10px;">-->
+<!--                                                            <p>Moving forward, reporting karyakars should begin to-->
+<!--                                                                record sabha attendance in BKMS based on virtual post-->
+<!--                                                                sabha goshti attendance.-->
+<!--                                                            </p>-->
+<!--                                                        </td>-->
+<!--                                                    </tr>-->
+<!--                                                </table>-->
+<!--                                            </td>-->
+<!--                                        </tr>-->
+<!--                                    </table>-->
+<!--                                </td>-->
+<!--                            </tr>-->
+<!--                            <tr>-->
+<!--                                <td>-->
+<!--                                    <table align="center" bgcolor="#ffffff" border="0" cellpadding="0" cellspacing="0"-->
+<!--                                           style="background-color:#ffffff; margin-top: 20px;" width="100%">-->
+<!--                                        <tr>-->
+<!--                                            <td valign="top" width="100%" style="padding-bottom: 5px;">-->
+<!--                                                <table border="0" cellpadding="5" cellspacing="0" width="100%"-->
+<!--                                                       style="background-color:#555555;">-->
+<!--                                                    <tr>-->
+<!--                                                        <td align="center" valign="top">-->
+<!--                                                                <span style="color: #ffffff;font-weight: bold;font-size: 16px;">-->
+<!--                                                                    2020 Virtual Post-Sabha - BK Karyakar Goshthis-->
+<!--                                                                </span>-->
+<!--                                                        </td>-->
+<!--                                                    </tr>-->
+<!--                                                </table>-->
+<!--                                            </td>-->
+<!--                                        </tr>-->
+<!--                                        <tr>-->
+<!--                                            <td valign="top" width="100%" style=" font-size: 13px;">-->
+<!--                                                <table align="left" border="0" cellpadding="0" cellspacing="0"-->
+<!--                                                       width="100%">-->
+<!--                                                    <tr>-->
+<!--                                                        <td style="color:#7e7e7e; text-align:left; padding:0 10px;">-->
+<!--                                                            <p>A few select centers through North America conducted-->
+<!--                                                                virtual sabha Goshthis directly following the national-->
+<!--                                                                virtual kishore-kishori sabha the past two weeks. They-->
+<!--                                                                were very well received because it allowed the kishores-->
+<!--                                                                to discuss the sabha content to increase retention along-->
+<!--                                                                with the ability to spend time together virtually.-->
+<!--                                                            </p>-->
+<!--                                                            <p>-->
+<!--                                                                Starting the weekend of 3/29 (this weekend) all centers-->
+<!--                                                                should hold virtual post sabha Goshthis after the-->
+<!--                                                                virtual Kishore sabha. Your respective mandal/vicharan-->
+<!--                                                                Pujya Sant will try to attend as many virtual sabha-->
+<!--                                                                Goshthis as possible. Your RC will help coordinate Pujya-->
+<!--                                                                Sant presence/labh for your mandal.-->
+<!--                                                            </p>-->
+<!--                                                            <p>Suggested planning tips:</p>-->
+<!--                                                            <ul>-->
+<!--                                                                <li>-->
+<!--                                                                    Tag team with your RC to decide on what medium to be-->
+<!--                                                                    used for Virtual Sabha Goshthis (Zoom, etc)-->
+<!--                                                                </li>-->
+<!--                                                                <li>-->
+<!--                                                                    Create a plan for informing your mandal kishores so-->
+<!--                                                                    they know this will be happening after the virtual-->
+<!--                                                                    sabha ends-->
+<!--                                                                </li>-->
+<!--                                                                <li>-->
+<!--                                                                    Instructions on how to join the virtual sabha goshti-->
+<!--                                                                    (with relevant links) should be sent out to all the-->
+<!--                                                                    kishores and your RC by the Friday of every week.-->
+<!--                                                                </li>-->
+<!--                                                                <li>-->
+<!--                                                                    For larger mandals, consider splitting the Goshthis-->
+<!--                                                                    into smaller sub-groups (example, K1/K2 gosthis can-->
+<!--                                                                    be separate)-->
+<!--                                                                </li>-->
+<!--                                                            </ul>-->
+<!--                                                        </td>-->
+<!--                                                    </tr>-->
+<!--                                                </table>-->
+<!--                                            </td>-->
+<!--                                        </tr>-->
+<!--                                    </table>-->
+<!--                                </td>-->
+<!--                            </tr>-->
+<!--                            <tr>-->
+<!--                                <td>-->
+<!--                                    <table align="center" bgcolor="#ffffff" border="0" cellpadding="0" cellspacing="0"-->
+<!--                                           style="background-color:#ffffff; margin-top: 20px;" width="100%">-->
+<!--                                        <tr>-->
+<!--                                            <td valign="top" width="100%" style="padding-bottom: 5px;">-->
+<!--                                                <table border="0" cellpadding="5" cellspacing="0" width="100%"-->
+<!--                                                       style="background-color:#555555;">-->
+<!--                                                    <tr>-->
+<!--                                                        <td align="center" valign="top">-->
+<!--                                                                <span style="color: #ffffff;font-weight: bold;font-size: 16px;">-->
+<!--                                                                    2020 Virtual Post-Sabha - Goshthi Guidelines-->
+<!--                                                                </span>-->
+<!--                                                        </td>-->
+<!--                                                    </tr>-->
+<!--                                                </table>-->
+<!--                                            </td>-->
+<!--                                        </tr>-->
+<!--                                        <tr>-->
+<!--                                            <td valign="top" width="100%" style=" font-size: 13px;">-->
+<!--                                                <table align="left" border="0" cellpadding="0" cellspacing="0"-->
+<!--                                                       width="100%">-->
+<!--                                                    <tr>-->
+<!--                                                        <td style="color:#7e7e7e; text-align:left; padding:0 10px;">-->
+<!--                                                            <p>-->
+<!--                                                                Due to the current limitation on public gatherings,-->
+<!--                                                                karyakar goshthis will continue virtually for each-->
+<!--                                                                center. BK Pujya Santo will be attending their centers’-->
+<!--                                                                karyakar goshthis based on their availability. Local-->
+<!--                                                                Coordinators should reach out to their BK Pujya Sant and-->
+<!--                                                                Regional Coordinator (RC) to schedule a date/time that-->
+<!--                                                                works for the Pujya Sant and the karyakar team. Local-->
+<!--                                                                karyakar teams should still continue to take attendance-->
+<!--                                                                during these goshthis and record the data on BKMS.-->
+<!--                                                            </p>-->
+<!--                                                        </td>-->
+<!--                                                    </tr>-->
+<!--                                                </table>-->
+<!--                                            </td>-->
+<!--                                        </tr>-->
+<!--                                    </table>-->
+<!--                                </td>-->
+<!--                            </tr>-->
+<!--                            <tr>-->
+<!--                                <td>-->
+<!--                                    <table align="center" bgcolor="#ffffff" border="0" cellpadding="0" cellspacing="0"-->
+<!--                                           style="background-color:#ffffff; margin-top: 20px;" width="100%">-->
+<!--                                        <tr>-->
+<!--                                            <td valign="top" width="100%" style="padding-bottom: 5px;">-->
+<!--                                                <table border="0" cellpadding="5" cellspacing="0" width="100%"-->
+<!--                                                       style="background-color:#555555;">-->
+<!--                                                    <tr>-->
+<!--                                                        <td align="center" valign="top">-->
+<!--                                                                <span style="color: #ffffff;font-weight: bold;font-size: 16px;">-->
+<!--                                                                    2020 Virtual BK Karyakar Goshthi - April-->
+<!--                                                                </span>-->
+<!--                                                        </td>-->
+<!--                                                    </tr>-->
+<!--                                                </table>-->
+<!--                                            </td>-->
+<!--                                        </tr>-->
+<!--                                        <tr>-->
+<!--                                            <td valign="top" width="100%" style=" font-size: 13px;">-->
+<!--                                                <table align="left" border="0" cellpadding="0" cellspacing="0"-->
+<!--                                                       width="100%">-->
+<!--                                                    <tr>-->
+<!--                                                        <td style="color:#7e7e7e; text-align:left; padding:0 10px;">-->
+<!--                                                            <p>-->
+<!--                                                                Yoganand: <em>“Yog”</em> means association. We have-->
+<!--                                                                attained the-->
+<!--                                                                yog of Bhagwan through the Satpurush. This yog is known-->
+<!--                                                                as prapti and to experience happiness from this yog is-->
+<!--                                                                known as praptino kef. Bhagwan Swaminarayan has-->
+<!--                                                                explained in <i>Vachanamrut Jetalpur 5</i> that “there-->
+<!--                                                                is-->
+<!--                                                                <strong>nothing</strong> greater than worshipping God.”-->
+<!--                                                                We have attained-->
+<!--                                                                Bhagwan himself on this Earth and there is nothing great-->
+<!--                                                                now to achieve. Any misery we experience now is only a-->
+<!--                                                                lack of our understanding. How can we tackle any-->
+<!--                                                                obstacles that stop us from constantly experiencing-->
+<!--                                                                praptino kef and how can we keep this prapti in mind at-->
+<!--                                                                all times to truly feel the highest for of happiness?-->
+<!--                                                            </p>-->
+<!--                                                            <table align="center" border="0" cellpadding="0"-->
+<!--                                                                   cellspacing="0" width="45%">-->
+<!--                                                                <tr>-->
+<!--                                                                    <td>-->
+<!--                                                                        <table align="center" border="0" cellpadding="0"-->
+<!--                                                                               cellspacing="10">-->
+<!--                                                                            <tr>-->
+<!--                                                                                <td align="center"-->
+<!--                                                                                    style=" background-color:#555555;  border-radius:6px; background-clip: padding-box;text-align:center; padding:2px 5px;"-->
+<!--                                                                                    valign="middle">-->
+<!--                                                                                    &lt;!&ndash;                                                                                    <a href="http://kishore.na.baps.org/karyakars/?p=3770"&ndash;&gt;-->
+<!--                                                                                    &lt;!&ndash;                                                                                       target="_blank"&ndash;&gt;-->
+<!--                                                                                    &lt;!&ndash;                                                                                       style="text-decoration: none; color: #ffffff; font-weight: normal;">&ndash;&gt;-->
+<!--                                                                                    &lt;!&ndash;                                                                                        April Karyakar Goshthi&ndash;&gt;-->
+<!--                                                                                    &lt;!&ndash;                                                                                    </a>&ndash;&gt;-->
+<!--                                                                                </td>-->
+<!--                                                                            </tr>-->
+<!--                                                                        </table>-->
+<!--                                                                    </td>-->
+<!--                                                                </tr>-->
+<!--                                                            </table>-->
+<!--                                                        </td>-->
+<!--                                                    </tr>-->
+<!--                                                </table>-->
+<!--                                            </td>-->
+<!--                                        </tr>-->
+<!--                                    </table>-->
+<!--                                </td>-->
+<!--                            </tr>-->
+<!--                        </table>-->
+<!--                    </td>-->
+<!--                </tr>-->
+<!--            </table>-->
+<!--        </td>-->
+<!--    </tr>-->
+<!--    &lt;!&ndash;    <tr>&ndash;&gt;-->
+<!--    &lt;!&ndash;        <td align="center">&ndash;&gt;-->
+<!--    &lt;!&ndash;            <table align="center" border="0" cellpadding="0" cellspacing="0"&ndash;&gt;-->
+<!--    &lt;!&ndash;                   style="background-color:#ffffff; padding-top: 10px;" width="600">&ndash;&gt;-->
+
+<!--    &lt;!&ndash;                <tr>&ndash;&gt;-->
+<!--    &lt;!&ndash;                    <td height="40" valign="bottom">&ndash;&gt;-->
+<!--    &lt;!&ndash;                        <table align="center" bgcolor="#ffffff" border="0" cellpadding="10" cellspacing="0" width="350">&ndash;&gt;-->
+<!--    &lt;!&ndash;                            <tr>&ndash;&gt;-->
+<!--    &lt;!&ndash;                                <td>&ndash;&gt;-->
+<!--    &lt;!&ndash;                                    <a href="https://www.facebook.com/bapsswaminarayansanstha" target="_blank">&ndash;&gt;-->
+<!--    &lt;!&ndash;                                        <img border="none"&ndash;&gt;-->
+<!--    &lt;!&ndash;                                             src="http://kishore.na.baps.org/websites/emaildigest/standard/images/social/iconmonstr-facebook-4-48.png"&ndash;&gt;-->
+<!--    &lt;!&ndash;                                             width="50%"/>&ndash;&gt;-->
+<!--    &lt;!&ndash;                                    </a>&ndash;&gt;-->
+<!--    &lt;!&ndash;                                </td>&ndash;&gt;-->
+<!--    &lt;!&ndash;                                <td>&ndash;&gt;-->
+<!--    &lt;!&ndash;                                    <a href="https://twitter.com/BAPS" target="_blank">&ndash;&gt;-->
+<!--    &lt;!&ndash;                                        <img border="none"&ndash;&gt;-->
+<!--    &lt;!&ndash;                                             src="http://kishore.na.baps.org/websites/emaildigest/standard/images/social/iconmonstr-twitter-4-48.png"&ndash;&gt;-->
+<!--    &lt;!&ndash;                                             width="50%"/>&ndash;&gt;-->
+<!--    &lt;!&ndash;                                    </a>&ndash;&gt;-->
+<!--    &lt;!&ndash;                                </td>&ndash;&gt;-->
+<!--    &lt;!&ndash;                                <td>&ndash;&gt;-->
+<!--    &lt;!&ndash;                                    <a href="https://www.instagram.com/baps" target="_blank">&ndash;&gt;-->
+<!--    &lt;!&ndash;                                        <img border="none"&ndash;&gt;-->
+<!--    &lt;!&ndash;                                             src="http://kishore.na.baps.org/websites/emaildigest/standard/images/social/iconmonstr-instagram-9-48.png"&ndash;&gt;-->
+<!--    &lt;!&ndash;                                             width="50%"/>&ndash;&gt;-->
+<!--    &lt;!&ndash;                                    </a>&ndash;&gt;-->
+<!--    &lt;!&ndash;                                </td>&ndash;&gt;-->
+<!--    &lt;!&ndash;                                <td>&ndash;&gt;-->
+<!--    &lt;!&ndash;                                    <a href="https://www.youtube.com/user/BAPSChannel" target="_blank">&ndash;&gt;-->
+<!--    &lt;!&ndash;                                        <img border="none"&ndash;&gt;-->
+<!--    &lt;!&ndash;                                             src="http://kishore.na.baps.org/websites/emaildigest/standard/images/social/iconmonstr-youtube-4-48.png"&ndash;&gt;-->
+<!--    &lt;!&ndash;                                             width="50%"/>&ndash;&gt;-->
+<!--    &lt;!&ndash;                                    </a>&ndash;&gt;-->
+<!--    &lt;!&ndash;                                </td>&ndash;&gt;-->
+<!--    &lt;!&ndash;                            </tr>&ndash;&gt;-->
+<!--    &lt;!&ndash;                        </table>&ndash;&gt;-->
+<!--    &lt;!&ndash;                    </td>&ndash;&gt;-->
+<!--    &lt;!&ndash;                </tr>&ndash;&gt;-->
+
+<!--    &lt;!&ndash;            </table>&ndash;&gt;-->
+<!--    &lt;!&ndash;        </td>&ndash;&gt;-->
+<!--    &lt;!&ndash;    </tr>&ndash;&gt;-->
+<!--    <tr>-->
+<!--        <td align="center">-->
+<!--            <table align="center" border="0" cellpadding="0" cellspacing="0" style="background-color:#eeefef;"-->
+<!--                   width="600">-->
+<!--                <tr>-->
+<!--                    <td>-->
+<!--                        <img border="none"-->
+<!--                             src="http://kishore.na.baps.org/websites/emaildigest/standard/images/digest/footer.jpg"-->
+<!--                             width="600"/>-->
+<!--                    </td>-->
+<!--                </tr>-->
+<!--            </table>-->
+<!--        </td>-->
+<!--    </tr>-->
+<!--</table>-->
+</body>
