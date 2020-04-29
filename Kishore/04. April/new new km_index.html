@@ -3,67 +3,208 @@
     <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
     <meta content="initial-scale=1.0" name="viewport">
     <meta content="telephone=no" name="format-detection">
-    <link href='https://fonts.googleapis.com/css?family=Roboto+Condensed:700' rel='stylesheet' type='text/css'>
-    <link href='https://fonts.googleapis.com/css?family=Roboto:300' rel='stylesheet' type='text/css'>
+    <link href="https://fonts.googleapis.com/css2?family=Amiko:wght@400;600;700&family=Roboto:wght@400;500;700&display=swap"
+          rel="stylesheet">
+
     <title>Kishore Digest</title>
+
+    <style type="text/css">
+        body {
+            background: #eaebeb;
+            width: 100%;
+            font-family: Roboto, sans-serif;
+            margin: auto;
+        }
+
+        h1, h2, p {
+            padding: 0;
+            margin: 0;
+            text-align: center;
+        }
+
+        hr {
+            margin: 0;
+        }
+
+        .page {
+            background: #ffffff;
+            width: 600px;
+            /*min-height: 100vh;*/
+        }
+
+        .image {
+            padding: 0;
+            vertical-align: top;
+            width: 100%;
+            /*height: 150px;*/
+        }
+
+        .text {
+            padding: 0;
+            vertical-align: top;
+            width: 100%;
+            height: 22px;
+        }
+
+        .title {
+            text-align: center;
+            font-size: 30px;
+            font-weight: bold;
+            font-family: Amiko, sans-serif;
+            margin: 10px 0;
+            color: #444444;
+        }
+
+        .quote {
+            font-family: Amiko, sans-serif;
+            text-align: center;
+            font-size: 16px;
+            color: #7e7e7e;
+            margin: auto;
+            padding: 0 0 10px 0;
+        }
+
+        .section {
+            background: #ffffff;
+            width: 600px;
+            margin-top: 15px;
+        }
+
+        .sectionTitle {
+            text-align: center;
+            padding: 5px 0;
+            font-size: 28px;
+            color: white;
+        }
+
+        .cardTitle {
+            padding: 5px 0;
+            margin: 10px 0 0 0;
+            font-size: 21px;
+            background: #4e4e4e;
+            color: white;
+            font-weight: normal;
+        }
+
+        .card {
+            font-weight: lighter;
+            padding: 10px 7px;
+            text-align: left;
+            font-size: 14px;
+            color: #616161;
+            line-height: 1.3;
+        }
+
+        a.btn {
+            display: inline-block;
+            padding: 0.35em 1.2em;
+            margin: 0 0.3em 0.3em 0;
+            /*border: 3px solid #000d2d;*/
+            border-radius: .5em;
+            box-sizing: border-box;
+            text-decoration: none;
+            font-family: 'Roboto', sans-serif;
+            font-weight: bold;
+            text-align: center;
+            transition: all 0.2s;
+            color: white;
+            background-color: #000d2d;
+        }
+    </style>
 </head>
-<body style="font-size:12px;margin: 0;padding: 0;height: 100%;">>
-<table border="0" cellpadding="0" cellspacing="0" style="background-color:#eeefef;" width="100%">
-    <tr>
-        <td>
-            <table cellpadding="0" cellspacing="0"
-                   style="background-color:#eeefef; width: 100%; border: 0; alignment: center; padding: 0;">
-                <tr>
-                    <td align="center" valign="top" width="100%">
-                        <table align="center" border="0" cellpadding="0" cellspacing="0"
-                               style="background-color:#ffffff; " width="600">
-                            <tr>
-                                <td align="center" valign="top" style="padding: 10px 0 10px 0;">
-                                    <img border="none" alt="Akshar Purushottam Murti"
-                                         src="http://kishore.na.baps.org/websites/emaildigest/standard/images/common/apm_digest.png"
-                                         height="40"/>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td align="center" valign="top">
-                                    <img alt="image_header_600x300" border="0" hspace="0"
-                                         src="http://kishore.na.baps.org/websites/emaildigest/standard/images/digest/km-header-2019.jpg"
-                                         width="600"/>
-                                </td>
-                            </tr>
-                        </table>
-                    </td>
-                </tr>
-            </table>
-        </td>
-    </tr>
-    <tr>
-        <td>
-            <table style="background-color: #ffffff; text-align: center; width: 600px; margin: auto; padding: 10px 0">
-                <tr>
-                    <td style="line-height: 22px; font-family: Arial,Tahoma, Helvetica, sans-serif;text-align:center;font-weight:normal;">
-                        <table border="0" cellpadding="0" cellspacing="5"
-                               style="background-color:#ffffff;text-align: center;" width="560">
-                            <tr>
-                                <td>
-                                    <span style="font-size: 28px; color:#404040; font-weight:bold;">
-                                         Week of [currentmonth] [currentdaynumber]
-                                    </span>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td style="font-size: 13px; color:#848383;">
-                                    “When the indriyas withdraw from the panchvishays, i.e., sights, sounds, smells,
-                                    tastes, and touch, and no desire to indulge in those vishays remains, then all of
-                                    the indriyas are said to be conquered.”
-                                    <span style="font-style: italic;font-weight: bold;">- Sarangpur 1</span>
-                                </td>
-                            </tr>
-                        </table>
-                    </td>
-                </tr>
-            </table>
-        </td>
-    </tr>
-</table>
+
+<body>
+<div style="background-color: #000d2d; width: 100%">
+    <table border="0" cellpadding="0" cellspacing="0" class="page" align="center">
+        <tr class="text" align="center">
+            <td class="text">
+                <p style="text-align: center; line-height: 1.6; font-size: 14px; background: #444444; color: white; margin: auto">
+                    <webversion style="color: white">VIEW ONLINE</webversion>
+                </p>
+            </td>
+        </tr>
+        <tr class="image" align="center">
+            <td class="image">
+                <img class="image" src="ap.png" alt="Akshar Purushottam Murti">
+            </td>
+        </tr>
+
+        <tr class="image" align="center">
+            <td class="image">
+                <img class="image"
+                     src="http://kishore.na.baps.org/websites/emaildigest/standard/images/digest/km-header-2019.jpg"
+                     alt="Digest Header">
+            </td>
+        </tr>
+
+        <tr>
+            <td>
+                <h2 class="title">Week of [currentmonth] [currentdaynumber]</h2>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <p class="quote">
+                    “Of the four types of devotees described in the Gitā, Shri Krishna Bhagwān has
+                    called only the one possessing jnān his own ātmā. Therefore, one who, having
+                    discarded māyik influences, becomes brahmarup and then worships God is the best
+                    devotee.”
+                    <span style="color: #4e4e4e"><strong>- Ahmedābād 2</strong></span>
+                </p>
+            </td>
+        </tr>
+    </table>
+    <table border="0" cellpadding="0" cellspacing="0" class="section" align="center">
+        <tr>
+            <td>
+                <h1 class="sectionTitle" style="background-color: #f37000;">NEW</h1>
+            </td>
+        </tr>
+    </table>
+    <table border="0" cellpadding="0" cellspacing="0" class="page" align="center">
+        <tr>
+            <td>
+                <h2 class="cardTitle">2020 Virtual Sabha</h2>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <p class="card">Please find the sabha summary for April 19th attached here. Parents and children alike
+                    are
+                    encouraged to go through this document, complete the different activities and challenges, and
+                    address
+                    the different discussion questions during Ghar Sabha.<br><br>
+                    Please note that there is no bhakti challenge for this week - instead, balaks and balikas will take
+                    part
+                    in a family initiative to show appreciation to frontline workers. Details can be found on page 3 of
+                    the
+                    attached summary. Submissions are due by Wednesday.</p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <h2 class="cardTitle" style="background-color: #c60000">2020 Virtual Sabha</h2>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <p class="card">Premanand - Happiness from Brahmarup Priti: Bhagwan
+                    Swaminarayan’s paramhansas had experienced countless
+                    hardships. Yet, when their bhajans and other
+                    compositions are analyzed, only messages of happiness
+                    are witnessed. Why is this? These paramhansas had
+                    completely attached themselves to Bhagwan through love.
+                    It was this love that motivated them to do anything
+                    required to worship Bhagwan. How can we develop and
+                    maintain such love for Bhagwan and the Sant so that we
+                    can live our lives aligned to their wishes?</p>
+            </td>
+        </tr>
+        <tr>
+            <td align="center">
+                <a class="btn" href="http://sendy.bapsus.org/sendy/w/vEY6iu6GVIsVq7bGTTDoSA">Testing</a>
+            </td>
+        </tr>
+    </table>
+</div>
 </body>
