@@ -1,0 +1,980 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+    <meta content="width=device-width, initial-scale=1" name="viewport">
+    <meta content="IE=edge" http-equiv="X-UA-Compatible">
+    <meta name="x-apple-disable-message-reformatting">
+    <link href="https://fonts.googleapis.com/css2?family=Alice&family=Lora:ital@0;1&family=Merienda&family=Roboto:wght@300;400;500&display=swap"
+          rel="stylesheet">
+    <title>
+        Bal-Balika Digest
+    </title>
+    <style type="text/css">
+        /* CLIENT STYLES */
+        .ReadMsgBody {
+            width: 100%;
+        }
+
+        .ExternalClass {
+            width: 100%;
+        }
+
+        /* Force Hotmail to display emails at full width */
+        .ExternalClass, .ExternalClass p, .ExternalClass span, .ExternalClass font, .ExternalClass td, .ExternalClass div {
+            line-height: 100%;
+        }
+
+        /* Force Hotmail to display normal line spacing */
+        body, table, td, a {
+            -webkit-text-size-adjust: 100%;
+            -ms-text-size-adjust: 100%;
+        }
+
+        /* Prevent WebKit and Windows mobile changing default text sizes */
+        table, td {
+            mso-table-lspace: 0pt;
+            mso-table-rspace: 0pt;
+        }
+
+        /* Remove spacing between tables in Outlook 2007 and up */
+        img {
+            -ms-interpolation-mode: bicubic;
+        }
+
+        /* Allow smoother rendering of resized image in Internet Explorer */
+        /* RESET STYLES */
+        body {
+            margin: 0;
+            padding: 0;
+        }
+
+        img {
+            border: 0;
+            height: auto;
+            line-height: 100%;
+            outline: none;
+            text-decoration: none;
+        }
+
+        table {
+            border-collapse: collapse !important;
+            background-color: #fbfbfb;
+        }
+
+        body {
+            height: 100% !important;
+            margin: 0;
+            padding: 0;
+            width: 100% !important;
+        }
+
+        a {
+            text-decoration: none !important;
+        }
+
+        a:link {
+            text-decoration: none;
+        }
+
+
+        a:visited {
+            color: #c0c0c0;
+            text-decoration: none;
+        }
+
+        .black {
+            background-color: black !important;
+        }
+
+        .title {
+            /*width: 175px;*/
+            vertical-align: top;
+            padding-top: 33px;
+            color: #656565;
+        }
+
+        .socialIcon {
+            width: 50px;
+        }
+    </style>
+    <style>
+        @media screen and (max-width: 640px) {
+            .hide {
+                display: none !important;
+            }
+
+            .title {
+                width: 100%;
+                border-bottom: 2px solid #ffcc00;
+                padding: 20px 0 !important;
+            }
+
+            .center {
+                text-align: center !important;
+            }
+
+            .mobile-only {
+                display: block !important;
+                max-height: none !important;
+                max-width: 640px !important;
+                visibility: visible !important;
+            }
+
+            .responsivetable {
+                width: 100% !important;
+            }
+
+            .responsivetableblock {
+                width: 100% !important;
+                display: table !important;
+            }
+
+            .responsivetable70 {
+                width: 70% !important;
+            }
+
+            .responsivetable80 {
+                width: 80% !important;
+            }
+
+            .responsivetable90 {
+                width: 90% !important;
+            }
+
+            .full_img {
+                width: 100% !important;
+            }
+
+            .newrow {
+                display: block !important;
+                width: 100% !important;
+                padding-left: 0 !important;
+            }
+
+            .centered {
+                text-align: center !important;
+            }
+
+            .noborder {
+                border: 0px !important;
+            }
+
+            .headlinefont {
+                font-size: 24px !important;
+                line-height: 28px !important;
+                letter-spacing: .22px !important;
+            }
+
+            .sectionheadfont {
+                font-size: 22px !important;
+                line-height: 28px !important;
+                letter-spacing: 3px !important;
+            }
+
+            .clearheight {
+                height: auto !important;
+            }
+        }
+
+        @media screen and (max-width: 500px) {
+            .newlistrow {
+                display: block !important;
+                width: 100% !important;
+            }
+
+            .clearbg {
+                background: transparent none !important;
+            }
+        }
+
+        @media screen and (max-width: 425px) {
+            .full_imgtitle {
+                width: 85% !important;
+            }
+        }
+    </style>
+    <style>
+        .pimg {
+            display: block;
+            border: none;
+            -ms-interpolation-mode: bicubic;
+            object-fit: cover;
+            height: 45vh;
+            max-width: 100%;
+        }
+
+        .body {
+            background-color: #fbfbfb;
+            width: 100%;
+        }
+
+        /* Set a max-width, and make it display as block so it will automatically stretch to that width, but will also shrink down on a phone or something */
+        .container {
+            display: block;
+            margin: 0 auto !important; /* makes it centered */
+            /* max-width: 600px;
+            padding: 10px; */
+            max-width: 800px;
+        }
+
+        /* This should also be a block element, so that it will fill 100% of the .container */
+        .content {
+            box-sizing: border-box;
+            display: block;
+            margin: 0 auto;
+            padding: 10px;
+        }
+
+        /* -------------------------------------
+            HEADER, FOOTER, MAIN
+        ------------------------------------- */
+        .main {
+            background: #ffffff;
+            border-radius: 3px;
+            width: 100%;
+        }
+
+        .wrapper {
+            box-sizing: border-box;
+            padding: 0px;
+        }
+
+        .content-block {
+            padding-bottom: 10px;
+            padding-top: 10px;
+        }
+
+        .footer {
+            clear: both;
+            margin-top: 10px;
+            text-align: center;
+            width: 100%;
+        }
+
+        .footer td,
+        .footer p,
+        .footer span,
+        .footer a {
+            color: #999999;
+            font-size: 12px;
+            text-align: center;
+        }
+
+        .ptext {
+            list-style-position: inside;
+            margin-left: 5px;
+        }
+
+        .preheader {
+            color: transparent;
+            display: none;
+            height: 0;
+            max-height: 0;
+            max-width: 0;
+            opacity: 0;
+            overflow: hidden;
+            mso-hide: all;
+            visibility: hidden;
+            width: 0;
+        }
+
+        .powered-by .pa {
+            text-decoration: none;
+        }
+
+        hr {
+            border: 0;
+            border-bottom: 1px solid #f6f6f6;
+            margin: 20px 0;
+        }
+
+        /* -------------------------------------
+            RESPONSIVE AND MOBILE FRIENDLY STYLES
+        ------------------------------------- */
+        @media only screen and (max-width: 620px) {
+            table[class=body] h1 {
+                font-size: 28px !important;
+                margin-bottom: 10px !important;
+            }
+
+            table[class=body] p,
+            table[class=body] ul,
+            table[class=body] ol,
+            table[class=body] td,
+            table[class=body] span,
+            table[class=body] a {
+                font-size: 16px !important;
+            }
+
+            table[class=body] .wrapper,
+            table[class=body] .article {
+                padding: 0px !important;
+            }
+
+            table[class=body] .content {
+                padding: 0 !important;
+            }
+
+            table[class=body] .container {
+                padding: 0 !important;
+                width: 100% !important;
+            }
+
+            table[class=body] .main {
+                border-left-width: 0 !important;
+                border-radius: 0 !important;
+                border-right-width: 0 !important;
+            }
+
+            table[class=body] .btn table {
+                width: 100% !important;
+            }
+
+            table[class=body] .btn a {
+                width: 100% !important;
+            }
+
+            table[class=body] .img-responsive {
+                height: auto !important;
+                max-width: 100% !important;
+                width: auto !important;
+            }
+
+            .header > p.title {
+                font-size: 30px !important;
+                line-height: 34px !important;
+            }
+
+            .header > p.subtitle {
+                font-size: 18px !important;
+                line-height: 22px !important;
+            }
+
+            .carousel-image-wrapper {
+                height: 380px !important;
+            }
+        }
+
+        /* -------------------------------------
+            PRESERVE THESE STYLES IN THE HEAD
+        ------------------------------------- */
+        @media all {
+            .ExternalClass {
+                width: 100%;
+            }
+
+            .ExternalClass,
+            .ExternalClass p,
+            .ExternalClass span,
+            .ExternalClass font,
+            .ExternalClass td,
+            .ExternalClass div {
+                line-height: 100%;
+            }
+
+            .apple-link a {
+                color: inherit !important;
+                font-family: inherit !important;
+                font-size: inherit !important;
+                font-weight: inherit !important;
+                line-height: inherit !important;
+                text-decoration: none !important;
+            }
+
+            #MessageViewBody a {
+                color: inherit;
+                text-decoration: none;
+                font-size: inherit;
+                font-family: inherit;
+                font-weight: inherit;
+                line-height: inherit;
+            }
+
+            .btn-primary table td:hover {
+                background-color: #34495e !important;
+            }
+
+            .btn-primary a:hover {
+                background-color: #34495e !important;
+                border-color: #34495e !important;
+            }
+        }
+
+        /* -------------------------------------
+            CONTENT
+        ------------------------------------- */
+        .ptext {
+            font-family: 'Lora', sans-serif;
+            font-size: 18px;
+            line-height: 24px;
+        }
+
+
+        .image-text {
+            box-sizing: border-box;
+            padding: 20px;
+            font-size: 18px;
+        }
+
+        .header {
+            background-color: #f5eedc;
+            color: #e34748;
+            padding: 20px;
+        }
+
+        .title {
+            display: block;
+            font-family: 'Roboto', sans-serif;
+            font-size: 40px;
+            font-weight: bold;
+            line-height: 40px;
+            margin: 0;
+            text-align: center;
+        }
+
+        .quote {
+            color: #f5eedc;
+            background-color: #e34748;
+            box-sizing: border-box;
+            font-family: 'Roboto', sans-serif;
+            font-size: 20px;
+            line-height: 24px;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .teal-bg {
+            background-color: #829993;
+            color: white;
+        }
+
+        .white-bg {
+            background-color: white;
+            color: #e34748;
+        }
+
+        .orange-bg {
+            background-color: #f5eedc;
+            color: #e34748;
+        }
+
+    </style>
+
+    <!--[if gte mso 9]>
+    <xml>
+        <o:OfficeDocumentSettings>
+            <o:AllowPNG/>
+            <o:PixelsPerInch>96</o:PixelsPerInch>
+        </o:OfficeDocumentSettings>
+    </xml>
+    <![endif]-->
+    <!--[if gt mso 15]>
+    <style type="text/css" media="all">
+        /* Outlook 2016 Height Fix */
+        table, tr, td {
+            border-collapse: collapse;
+        }
+
+        tr {
+            font-size: 0px;
+            line-height: 0px;
+            border-collapse: collapse;
+        }
+    </style>
+    <![endif]-->
+
+    <!--[if (gte mso 9)]>
+    <style type="text/css">
+        .msotextlink {
+            text-decoration: underline !important;
+        }
+    </style>
+    <![endif]-->
+
+    <style type="text/css">
+        /* iOS BLUE LINKS */
+
+        a[x-apple-data-detectors] {
+            color: inherit !important;
+            text-decoration: none !important;
+            font-size: inherit !important;
+            font-family: inherit !important;
+            font-weight: inherit !important;
+            line-height: inherit !important;
+        }
+    </style>
+    <style type="text/css">
+        .textlinkhover:hover {
+            background-color: #ffcc00 !important;
+            transition: all .125s ease-in !important;
+        }
+    </style>
+</head>
+<body style="margin: 0; padding: 0; -webkit-text-size-adjust: none; -ms-text-size-adjust: none;">
+
+<!--DESKTOP BANNER-->
+<table border="0" cellpadding="0" cellspacing="0" class="hide black" width="100%" style="min-width:100%;">
+    <tr>
+        <td align="center" style="padding-top: 12px; padding-bottom: 12px;" class="black">
+            <table border="0" cellpadding="0" cellspacing="0" class="responsivetable black" style="width: 620px;">
+                <tr>
+                    <td align="middle" class="black"
+                        style="font-family: CenturyGothic, AppleGothic, Gill Sans, Gill Sans MT, sans-serif; font-size: 9px; line-height: 8px; color: #ffffff; text-transform: uppercase; letter-spacing: 2.4px; ">
+                        <webversion
+                                style="text-decoration:none;color: #ffffff; background-color: black; font-size: 9px;">
+                            VIEW ONLINE
+                        </webversion>
+                    </td>
+                </tr>
+            </table>
+        </td>
+    </tr>
+</table>
+<!-- END DESKTOP BANNER -->
+<!-- MOBILE BANNER -->
+<!--[if !mso]><!-->
+<div class="mobile-only black"
+     style="font-size: 0; max-height: 0; overflow: hidden; display: none; mso-hide: all; min-width:100%;">
+    <table style="width: 100%;" class="black" border="0" cellpadding="0" cellspacing="0">
+        <tr>
+            <td align="center" style="padding-top: 13px; padding-bottom: 13px;" class="black">
+                <table border="0" cellpadding="0" cellspacing="0" class="responsivetable90 black" style="width: 640px;">
+                    <tr>
+                        <td align="middle" class="black"
+                            style="font-family: CenturyGothic, AppleGothic, Gill Sans, Gill Sans MT, sans-serif; font-size: 8px; line-height: 8px; color: #ffffff; text-transform: uppercase; letter-spacing: 2.4px; ">
+                            <webversion style="text-decoration:none;color: #ffffff; background-color: black">
+                                VIEW ONLINE
+                            </webversion>
+                        </td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+    </table>
+</div>
+<!--<![endif]-->
+<!-- END MOBILE BANNER -->
+
+
+<!-- SUNDAY STILLS HEADER -->
+<table border="0" cellpadding="0" cellspacing="0" width="100%" style="background-color: #fbfbfb">
+    <tr>
+        <td align="center" style="padding:10px 0 10px 0;">
+            <table border="0" cellpadding="0" cellspacing="0" class="responsivetable" style="width:400px;">
+                <tr>
+                    <td align="center" style="padding: 10px 0 10px 0;">
+                        <img alt="AP Murti"
+                             src="https://drive.google.com/uc?id=1UJuMwpuEFTwnO9a__atmrnU7m2z9AWbV"
+                             style="color: #000000; font-family:Helvetica,Arial,sans-serif; width: 80px">
+                    </td>
+                </tr>
+                <tr>
+                    <td align="center"
+                        style="font-family: CenturyGothic, AppleGothic, Gill Sans, Gill Sans MT, sans-serif,'GeoBrandRegular'; font-size: 11px; line-height: 12px; text-transform: uppercase; letter-spacing: 2px; color: #000000;">
+                        Week 24
+                    </td>
+                </tr>
+                <tr>
+                    <td align="center">
+                        <img alt="Bal-Balika Karyakar Digest" class="full_imgtitle"
+                             src="https://drive.google.com/uc?id=194PM5Ssrbjqvush1c4CR096oyDDOdT67"
+                             style="color: #000000; font-family:Helvetica,Arial,sans-serif; width: 410px">
+                    </td>
+                </tr>
+                <tr>
+                    <td align="center" style="padding-bottom: 10px">
+                        <img alt="Digest Header"
+                             src="https://drive.google.com/uc?id=14O6nVQMy85myvbcgffUqBPVCV5GpYTs7"
+                             style="color: #000000; font-family:Helvetica,Arial,sans-serif; height: auto; width: 100%; max-width: 265px">
+                    </td>
+                </tr>
+                <tr>
+                    <td align="center"
+                        style="font-family: CenturyGothic, AppleGothic, Gill Sans, Gill Sans MT, sans-serif,'GeoBrandRegular'; font-size: 11px; line-height: 12px; text-transform: uppercase; letter-spacing: 2px; color: #000000;">
+                        [currentmonth] [currentdaynumber], [currentyear]
+                    </td>
+                </tr>
+            </table>
+        </td>
+    </tr>
+</table>
+<!-- END SUNDAY STILLS HEADER -->
+
+
+<!-- LARGE PHOTO FEATURE -->
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+    <tr>
+        <td align="center" style="background-color: black">
+            <table border="0" cellpadding="0" cellspacing="0" class="responsivetable80"
+                   style="width: 600px; color: white; background-color: black">
+                <tr style="background-color: black">
+                    <td style="padding: 7px 0 7px 0; background-color: black">
+                        <table border="0" cellpadding="0" cellspacing="0" class="responsivetable"
+                               style="width: 600px; background-color: black">
+                            <tr style="background-color: black">
+                                <td align="center" style="background-color: black">
+                                    <table border="0" cellpadding="0" cellspacing="0" style="background-color: black">
+                                        <tr>
+                                            <td align="center" class="headlinefont"
+                                                style="background-color: black; font-family: Helvetica,Arial,sans-serif; font-weight: 700; font-size: 24px; line-height: 34px; letter-spacing: .3px;">
+                                                <p class="vachanText" style="margin: 0; background-color: black">
+                                                    Gadhadā II - 11
+                                                </p>
+                                            </td>
+                                        </tr>
+                                    </table>
+                                </td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+                <tr>
+                    <td align="center"
+                        style="font-family:'Georgia', serif; font-size: 24px; line-height:10px;">
+                        <h2 class="vachanQuote"
+                            style="color: yellow; font-size: 34px; line-height: 0; margin: 6px 0 6px 0">“
+                        </h2>
+                        <p class="vachanText"
+                           style="margin: auto; line-height: 18px; font-size: 17px; letter-spacing: 0.5px">
+                            If one abandons the desire for the fruits related to dharma, arth, and kam, and if one
+                            performs pious karmas only to please God, then those pious karmas become a form of bhakti
+                            and aid in the attainment of liberation.
+                        </p>
+                        <h2 class="vachanQuote"
+                            style="color: yellow; font-size: 34px; line-height: 7px; margin: 4px 0 4px 0"><br><br>”
+                        </h2>
+                    </td>
+                </tr>
+            </table>
+        </td>
+    </tr>
+</table>
+<!-- END LARGE PHOTO FEATURE -->
+
+<!-- SECTION HEADER -->
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+    <tr>
+        <td align="center">
+            <table border="0" cellpadding="0" cellspacing="0" class="responsivetable">
+                <tr>
+                    <td align="center" style="padding:0">
+                        <img src="https://drive.google.com/uc?id=1nHD1F1d7HpKmPrxKjNKJbxf433iIJ7PW" alt="What's New"
+                             style="width: 100%; max-width: 311px">
+                    </td>
+                </tr>
+            </table>
+        </td>
+    </tr>
+</table>
+
+<!-- END SECTION HEADER -->
+
+
+<!-- TEXT LINKS -->
+<!-- Copy and paste the second level tr like shown to add a new section.
+It's direct child is <th class="newrow centered title"> to create a new section -->
+<table border="0" cellpadding="0" cellspacing="0" width="100%" bgcolor="#ffffff">
+    <tr>
+        <td align="center">
+            <table border="0" cellpadding="0" cellspacing="0" class="responsivetable80" style="width: 80%;">
+                <tr>
+                    <th align="right" class="newrow centered title"
+                        style="font-family: CenturyGothic, AppleGothic, Gill Sans, Gill Sans MT, sans-serif,'GeoBrandBold';
+                        font-size: 22px; line-height: 28px; text-transform: uppercase; letter-spacing: 3px;
+                        padding-right: 15px; font-weight: 700; text-align: right">
+                        2020 VIRTUAL SABHA SUMMARY
+                    </th>
+                    <th align="left" class="newrow centered noborder paddingto20 "
+                        style="padding: 30px 0 30px 17px; border-left: 2px solid #ffcc00; max-width: 730px;">
+                        <table border="0" cellpadding="0" cellspacing="0" class="responsivetable">
+                            <tr>
+                                <td align="left" class="centered"
+                                    style="font-family: Helvetica,Arial,sans-serif; font-weight: normal; font-size: 16px; line-height:24px; padding-bottom: 8px; letter-spacing: .5px; color: #000000;">
+                                    <a href="https://baps.box.com/s/85exdadvjj22xifsfk95r9zdufy6g0lo"
+                                       style="text-decoration: none; color:#000000;" target="_blank">
+                                        Please find the sabha summary for June 7th attached here. Parents and children
+                                        alike are encouraged to go through this document, complete the different
+                                        activities and challenges, and address the different discussion questions during
+                                        Ghar Sabha.
+                                        <img alt="Click Here" style="width: 20px; position: absolute; padding-left: 3px"
+                                             src="https://drive.google.com/uc?id=1BVfSmIVZDrkfikTU0FnDD0KbCoq4IdYR">
+                                    </a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td align="left" class="centered"
+                                    style="font-family: Helvetica,Arial,sans-serif; font-weight: normal; font-size: 16px; line-height:24px; padding-bottom: 8px; letter-spacing: .5px; color: #000000;">
+                                    <a style="text-decoration: none; color:#000000;">
+                                        <strong>
+                                            Please note that Bhakti Challenge submission for this week will be
+                                            submitted via Typeform by Friday 10pm EST).
+                                        </strong>
+                                        This week's Bhakti Challenge is Show and Tell!
+                                        Submit a picture of one thing you’ve become better at over time and mastered
+                                        with practice. It may be a lego sculpture you made, a puzzle, a sketch, or even
+                                        a writing in Gujarati!
+                                    </a>
+                                </td>
+                            </tr>
+                        </table>
+                    </th>
+                </tr>
+                <tr>
+                    <th class="newrow centered title"
+                        style="font-family: CenturyGothic, AppleGothic, Gill Sans, Gill Sans MT, sans-serif,'GeoBrandBold';
+                        font-size: 22px; line-height: 28px; text-transform: uppercase; letter-spacing: 3px;
+                        padding-right: 15px; font-weight: 700; text-align: right">
+                        2020 VIRTUAL GROUP 3 POST SABHA GOSHTHI
+                    </th>
+                    <th align="left" class="newrow centered noborder paddingto20 "
+                        style="padding: 30px 0 30px 17px; border-left: 2px solid #ffcc00; max-width: 730px;">
+                        <table border="0" cellpadding="0" cellspacing="0" class="responsivetable">
+                            <tr>
+                                <td align="left" class="centered"
+                                    style="font-family: Helvetica,Arial,sans-serif; font-weight: normal; font-size: 16px; line-height:24px; padding-bottom: 8px; letter-spacing: .5px; color: #000000;">
+                                    <a style="text-decoration: none; color:#000000;"
+                                       href="https://baps.box.com/s/kj30ffkhwrcqk2xjjua0jpxix4ha7em7" target="_blank">
+                                        Please read over the Post-Sabha Goshthi questions for the
+                                        <strong>June 14th</strong>
+                                        Kishore-Kishori Sabha. The questions are meant to help karyakars guide the post
+                                        sabha goshthi discussion.
+                                        <img alt="Click Here" style="width: 20px; position: absolute; padding-left: 3px"
+                                             src="https://drive.google.com/uc?id=1BVfSmIVZDrkfikTU0FnDD0KbCoq4IdYR">
+                                    </a>
+                                </td>
+                            </tr>
+                        </table>
+                    </th>
+                </tr>
+            </table>
+        </td>
+    </tr>
+</table>
+<!-- END TEXT LINKS -->
+
+<!-- SECTION HEADER -->
+<!--Reminders and Updates-->
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+    <tr>
+        <td align="center">
+            <table border="0" cellpadding="0" cellspacing="0" class="responsivetable">
+                <tr>
+                    <td align="center" style="padding:0">
+                        <img src="https://drive.google.com/uc?id=1aeFKz5QFl1zkeSDiJN7HrMuTuavj16te"
+                             alt="Reminders & Updates" style="width: 100%; max-width: 311px">
+                    </td>
+                </tr>
+            </table>
+        </td>
+    </tr>
+</table>
+
+<table border="0" cellpadding="0" cellspacing="0" width="100%" bgcolor="#ffffff">
+    <tr>
+        <td align="center">
+            <table border="0" cellpadding="0" cellspacing="0" class="responsivetable80" style="width: 80%;">
+                <tr>
+                    <th class="newrow centered title"
+                        style="font-family: CenturyGothic, AppleGothic, Gill Sans, Gill Sans MT, sans-serif,'GeoBrandBold';
+                        font-size: 22px; line-height: 28px; text-transform: uppercase; letter-spacing: 3px;
+                        padding-right: 15px; font-weight: 700; text-align: right">
+                        2020 BK Graduation Sabha Packet
+                    </th>
+                    <th align="left" class="newrow centered noborder paddingto20 "
+                        style="padding: 30px 0 30px 17px; border-left: 2px solid #ffcc00; max-width: 730px;">
+                        <table border="0" cellpadding="0" cellspacing="0" class="responsivetable">
+                            <tr>
+                                <td align="left" class="centered"
+                                    style="font-family: Helvetica,Arial,sans-serif; font-weight: normal; font-size: 16px; line-height:24px; padding-bottom: 8px; letter-spacing: .5px; color: #000000;">
+                                    <a style="text-decoration: none; color:#000000;" target="_blank"
+                                       href="http://bal.na.baps.org/karyakars/blog/2020/06/03/2020-bk-graduation-package/">
+                                        BK Graduation Sabha Ashirvad Video has been added
+                                        <img alt="Click Here" style="width: 20px; position: absolute; padding-left: 3px"
+                                             src="https://drive.google.com/uc?id=1BVfSmIVZDrkfikTU0FnDD0KbCoq4IdYR">
+                                    </a>
+                                </td>
+                            </tr>
+                        </table>
+                    </th>
+                </tr>
+            </table>
+        </td>
+    </tr>
+</table>
+
+<!--Announcements-->
+<!--<table border="0" cellpadding="0" cellspacing="0" width="100%">-->
+<!--    <tr>-->
+<!--        <td align="center">-->
+<!--            <table border="0" cellpadding="0" cellspacing="0" class="responsivetable">-->
+<!--                <tr>-->
+<!--                    <td align="center" style="padding:0">-->
+<!--                        <img src="https://drive.google.com/uc?id=1NqjY-2NfLOvo5TBMxnpsTgILfEW5exBc"-->
+<!--                             alt="Announcements" style="width: 100%; max-width: 311px">-->
+<!--                    </td>-->
+<!--                </tr>-->
+<!--            </table>-->
+<!--        </td>-->
+<!--    </tr>-->
+<!--</table>-->
+
+<!--<table border="0" cellpadding="0" cellspacing="0" width="100%" bgcolor="#ffffff">-->
+<!--    <tr>-->
+<!--        <td align="center">-->
+<!--            <table border="0" cellpadding="0" cellspacing="0" class="responsivetable80" style="width: 80%;">-->
+<!--                <tr>-->
+<!--                    <th class="newrow centered title"-->
+<!--                        style="font-family: CenturyGothic, AppleGothic, Gill Sans, Gill Sans MT, sans-serif,'GeoBrandBold';-->
+<!--                        font-size: 22px; line-height: 28px; text-transform: uppercase; letter-spacing: 3px;-->
+<!--                        padding-right: 15px; font-weight: 700; text-align: right">-->
+<!--                        Aksharpith Magazine Subscription Process Change-->
+<!--                    </th>-->
+<!--                    <th align="left" class="newrow centered noborder paddingto20 "-->
+<!--                        style="padding: 30px 0 30px 17px; border-left: 2px solid #ffcc00; max-width: 730px;">-->
+<!--                        <table border="0" cellpadding="0" cellspacing="0" class="responsivetable">-->
+<!--                            <tr>-->
+<!--                                <td align="left" class="centered"-->
+<!--                                    style="font-family: Helvetica,Arial,sans-serif; font-weight: normal; font-size: 16px; line-height:24px; padding-bottom: 8px; letter-spacing: .5px; color: #000000;">-->
+<!--                                    <a style="text-decoration: none; color:#000000;">-->
+<!--                                        Please note the new process for <a href="https://magazines.baps.org/"-->
+<!--                                                                           target="_blank">Aksharpith Magazine</a>-->
+<!--                                        subscriptions. The-->
+<!--                                        subscription is moving to a website based subscription process.-->
+<!--                                    </a>-->
+<!--                                </td>-->
+<!--                            </tr>-->
+<!--                            <tr>-->
+<!--                                <td align="left" class="centered"-->
+<!--                                    style="font-family: Helvetica,Arial,sans-serif; font-weight: normal; font-size: 16px; line-height:24px; padding-bottom: 8px; letter-spacing: .5px; color: #000000;">-->
+<!--                                    <a style="text-decoration: none; color:#000000;">-->
+<!--                                        Beginning June 1:-->
+<!--                                        <ol>-->
+<!--                                            <li>The physical subscription forms will no longer be accepted.</li>-->
+<!--                                            <li>Subscribers will need to visit the website to sign up for a new-->
+<!--                                                subscription or link existing subscriptions.-->
+<!--                                            </li>-->
+<!--                                        </ol>-->
+<!--                                    </a>-->
+<!--                                </td>-->
+<!--                            </tr>-->
+<!--                            <tr>-->
+<!--                                <td align="left" class="centered"-->
+<!--                                    style="font-family: Helvetica,Arial,sans-serif; font-weight: normal; font-size: 16px; line-height:24px; padding-bottom: 8px; letter-spacing: .5px; color: #000000;">-->
+<!--                                    <a style="text-decoration: none; color:#000000;">-->
+<!--                                        Frequently Asked Questions (FAQs):-->
+<!--                                        <ol>-->
+<!--                                            <li>-->
+<!--                                                Who to contact for questions about existing subscriptions?<br>-->
+<!--                                                <i>Mandir’s Subscription Coordinator or email directly to-->
+<!--                                                    <a href="mailto:magazines@in.baps.org">magazines@in.baps.org</a>-->
+<!--                                                </i>-->
+<!--                                            </li>-->
+<!--                                            <li>-->
+<!--                                                How to sign up for a new subscription on the website?<br>-->
+<!--                                                <i>Create an account using the website and click on the “New-->
+<!--                                                   Subscription” on the home page and enter your-->
+<!--                                                   shipping/billing/payment details on consecutive screens and it is-->
+<!--                                                   done. You would receive a confirmation both as a text on the screen-->
+<!--                                                   as well as via mail.</i>-->
+<!--                                            </li>-->
+<!--                                            <li>-->
+<!--                                                Is there a way to accept cash for new/existing subscriptions?<br>-->
+<!--                                                <i>No, going forward only credit card/ bank cards will be accepted for-->
+<!--                                                   signing up on the website.</i>-->
+<!--                                            </li>-->
+<!--                                            <li>-->
+<!--                                                What magazines can be subscribed to?<br>-->
+<!--                                                <i>Swaminarayan Prakash (Gujarati & Hindi), Premvati, Bal Prakash-->
+<!--                                                   (Gujarati & English) and Swaminarayan Bliss</i>-->
+<!--                                            </li>-->
+<!--                                        </ol>-->
+<!--                                    </a>-->
+<!--                                </td>-->
+<!--                            </tr>-->
+<!--                        </table>-->
+<!--                    </th>-->
+<!--                </tr>-->
+<!--            </table>-->
+<!--        </td>-->
+<!--    </tr>-->
+<!--</table>-->
+
+<!-- Large Spacing-->
+<table role="presentation" width="100%" border="0" cellspacing="0" cellpadding="0" style="min-width:100%; ">
+    <tr>
+        <td style="font-size:1px; line-height:1px; height: 30px">&nbsp;</td>
+    </tr>
+</table>
+<!--End Large Spacing-->
+
+<!-- SOCIAL -->
+<table align="center" border="0" cellpadding="0" cellspacing="0" width="100%"
+       style="min-width:100%;border-spacing: 0; mso-line-height-rule: exactly; mso-margin-bottom-alt: 0; mso-margin-top-alt: 0; mso-table-lspace: 0; mso-table-rspace: 0; background-color: black">
+    <tbody>
+    <tr>
+        <td align="center" style="padding:6px 0" class="black">
+            <table align="center" border="0" cellpadding="0" cellspacing="0" class="responsivetable black"
+                   style="width: 640px">
+                <tbody>
+                <tr>
+                    <td align="center" style="width: 250px">
+                        <table align="center" border="0" cellpadding="0" cellspacing="0" height="18" class="black">
+                            <tbody>
+                            <tr>
+                                <td align="center" style="padding-right: 1px;">
+                                    <a href="https://www.facebook.com/bapsswaminarayansanstha" target="_blank">
+                                        <img src="https://drive.google.com/uc?id=199kn2t0g6IYO_wplvx5GVGBA7Hv8kvhg"
+                                             class="socialIcon" alt="Facebook Icon"/>
+                                    </a>
+                                </td>
+                                <td align="center">
+                                    <a href="https://twitter.com/BAPS" target="_blank">
+                                        <img src="https://drive.google.com/uc?id=13NaTqGmvCsunhReEp023Nge-KIdudbU8"
+                                             class="socialIcon" alt="Twitter Icon">
+                                    </a>
+                                </td>
+                                <td align="center" style="padding-left: 4px;">
+                                    <a href="https://www.instagram.com/baps" target="_blank">
+                                        <img src="https://drive.google.com/uc?id=13RbVUbts0cfw9FnP_rBfLGTVA1VZhTK9"
+                                             class="socialIcon" alt="Instagram Icon">
+                                    </a>
+                                </td>
+                                <td align="center" style="padding-left: 4px;">
+                                    <a href="https://www.youtube.com/user/BAPSChannel" target="_blank">
+                                        <img src="https://drive.google.com/uc?id=13cGFcPg0vQvtpgG0XFO8FOVJ6n972Dkr"
+                                             class="socialIcon" alt="YouTube Icon">
+                                    </a>
+                                </td>
+                            </tr>
+                            </tbody>
+                        </table>
+                    </td>
+                </tr>
+                </tbody>
+            </table>
+        </td>
+    </tr>
+    </tbody>
+</table>
+
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+    <tr>
+        <td align="center"><!--[if (gte mso 9)|(IE)]>
+                           <![endif]-->
+                           <!--[if gte mso 9]><!-->
+            <table border="0" cellpadding="0" cellspacing="0">
+                <tr>
+                    <td align="center">
+                        <img alt="Footer"
+                             src="https://drive.google.com/uc?id=1zJRYMluBqdXwWdayNC1FG84h2sYhuK-1"
+                             style="color: #000000; font-family:Helvetica,Arial,sans-serif; width: 100%; max-width: 1100px">
+                    </td>
+                </tr>
+            </table>
+                           <!--<![endif]-->
+        </td>
+    </tr>
+</table>
+</body>
+</html>
