@@ -88,7 +88,7 @@
         }
 
         .title {
-            /*width: 175px;*/
+            width: 37%;
             vertical-align: top;
             padding-top: 33px;
             color: #656565;
@@ -195,13 +195,34 @@
         }
     </style>
     <style>
-        .pimg {
+        .imgMoment {
             display: block;
             border: none;
             -ms-interpolation-mode: bicubic;
-            object-fit: cover;
-            height: 45vh;
             max-width: 100%;
+            width: 100%;
+        }
+
+        .imgMomentTd {
+            line-height: 0;
+        }
+
+        .html-body {
+            background-color: #ffffff;
+            font-family: sans-serif;
+            -webkit-font-smoothing: antialiased;
+            font-size: 14px;
+            line-height: 1.4;
+            margin: 0;
+            padding: 0;
+            -ms-text-size-adjust: 100%;
+            -webkit-text-size-adjust: 100%;
+        }
+
+        table td {
+            font-family: sans-serif;
+            font-size: 14px;
+            vertical-align: top;
         }
 
         .bodyMoment {
@@ -212,10 +233,11 @@
         /* Set a max-width, and make it display as block so it will automatically stretch to that width, but will also shrink down on a phone or something */
         .containerMoment {
             display: block;
-            margin: 0 auto !important; /* makes it centered */
-            /* max-width: 600px;
-            padding: 10px; */
-            max-width: 800px;
+            margin: 0 auto !important;
+            /* makes it centered */
+            max-width: 1000px;
+            /*padding: 10px;*/
+            width: 100%;
         }
 
         /* This should also be a block element, so that it will fill 100% of the .container */
@@ -223,7 +245,7 @@
             box-sizing: border-box;
             display: block;
             margin: 0 auto;
-            padding: 10px;
+            /*padding: 10px;*/
         }
 
         /* -------------------------------------
@@ -237,33 +259,7 @@
 
         .wrapperMoment {
             box-sizing: border-box;
-            padding: 0px;
-        }
-
-        .content-block {
-            padding-bottom: 10px;
-            padding-top: 10px;
-        }
-
-        .footer {
-            clear: both;
-            margin-top: 10px;
-            text-align: center;
-            width: 100%;
-        }
-
-        .footer td,
-        .footer p,
-        .footer span,
-        .footer a {
-            color: #999999;
-            font-size: 12px;
-            text-align: center;
-        }
-
-        .ptext {
-            list-style-position: inside;
-            margin-left: 5px;
+            padding: 0;
         }
 
         .preheaderMoment {
@@ -279,34 +275,10 @@
             width: 0;
         }
 
-        .powered-by .pa {
-            text-decoration: none;
-        }
-
-        hr {
-            border: 0;
-            border-bottom: 1px solid #f6f6f6;
-            margin: 20px 0;
-        }
-
         /* -------------------------------------
             RESPONSIVE AND MOBILE FRIENDLY STYLES
         ------------------------------------- */
         @media only screen and (max-width: 620px) {
-            table[class=bodyMoment] h1 {
-                font-size: 28px !important;
-                margin-bottom: 10px !important;
-            }
-
-            table[class=bodyMoment] p,
-            table[class=bodyMoment] ul,
-            table[class=bodyMoment] ol,
-            table[class=bodyMoment] td,
-            table[class=bodyMoment] span,
-            table[class=bodyMoment] a {
-                font-size: 16px !important;
-            }
-
             table[class=bodyMoment] .wrapperMoment,
             table[class=bodyMoment] .article {
                 padding: 0px !important;
@@ -335,24 +307,9 @@
                 width: 100% !important;
             }
 
-            table[class=bodyMoment] .img-responsive {
-                height: auto !important;
-                max-width: 100% !important;
-                width: auto !important;
-            }
-
-            .headerMoment > p.title {
+            .headerTitleMoment {
                 font-size: 30px !important;
                 line-height: 34px !important;
-            }
-
-            .headerMoment > p.subtitle {
-                font-size: 18px !important;
-                line-height: 22px !important;
-            }
-
-            .carousel-image-wrapper {
-                height: 380px !important;
             }
         }
 
@@ -360,11 +317,6 @@
             PRESERVE THESE STYLES IN THE HEAD
         ------------------------------------- */
         @media all {
-            .ExternalClass {
-                width: 100%;
-            }
-
-            .ExternalClass,
             .ExternalClass p,
             .ExternalClass span,
             .ExternalClass font,
@@ -404,17 +356,11 @@
         /* -------------------------------------
             CONTENT
         ------------------------------------- */
-        .ptext {
-            font-family: 'Lora', sans-serif;
-            font-size: 18px;
-            line-height: 24px;
-        }
-
 
         .imageTextMoment {
             box-sizing: border-box;
             padding: 20px;
-            font-size: 18px;
+            font-size: 16px;
         }
 
         .headerMoment {
@@ -423,9 +369,9 @@
             padding: 20px;
         }
 
-        .title {
+        .headerTitleMoment {
             display: block;
-            font-family: 'Roboto', sans-serif;
+            font-family: 'Roboto', serif;
             font-size: 40px;
             font-weight: bold;
             line-height: 40px;
@@ -437,7 +383,7 @@
             color: #f5eedc;
             background-color: #e34748;
             box-sizing: border-box;
-            font-family: 'Roboto', sans-serif;
+            font-family: 'Roboto', serif;
             font-size: 20px;
             line-height: 24px;
             padding: 20px;
@@ -450,7 +396,7 @@
         }
 
         .whiteBgMoment {
-            background-color: white;
+            background-color: #ecf0f1;
             color: #e34748;
         }
 
@@ -513,7 +459,7 @@
 </head>
 <body style="margin: 0; padding: 0; -webkit-text-size-adjust: none; -ms-text-size-adjust: none;">
 
-<!-- DESKTOP BANNER -->
+<!--DESKTOP BANNER-->
 <table border="0" cellpadding="0" cellspacing="0" class="hide black" width="100%" style="min-width:100%;">
     <tr>
         <td align="center" style="padding-top: 12px; padding-bottom: 12px;" class="black">
@@ -566,14 +512,13 @@
                     <td align="center" style="padding: 10px 0 10px 0;">
                         <img alt="AP Murti"
                              src="https://drive.google.com/uc?id=1UJuMwpuEFTwnO9a__atmrnU7m2z9AWbV"
-                             style="color: #000000; font-family:Helvetica,Arial,sans-serif;" width="80">
+                             style="color: #000000; font-family:Helvetica,Arial,sans-serif; width: 80px">
                     </td>
                 </tr>
                 <tr>
                     <td align="center"
                         style="font-family: CenturyGothic, AppleGothic, Gill Sans, Gill Sans MT, sans-serif,'GeoBrandRegular'; font-size: 11px; line-height: 12px; text-transform: uppercase; letter-spacing: 2px; color: #000000;">
-                        Week
-                        22
+                        Week 27
                     </td>
                 </tr>
                 <tr>
@@ -620,7 +565,7 @@
                                             <td align="center" class="headlinefont"
                                                 style="background-color: black; font-family: Helvetica,Arial,sans-serif; font-weight: 700; font-size: 24px; line-height: 34px; letter-spacing: .3px;">
                                                 <p class="vachanText" style="margin: 0; background-color: black">
-                                                    Gadhadā I-62
+                                                    Gadhadā I - 36
                                                 </p>
                                             </td>
                                         </tr>
@@ -638,9 +583,8 @@
                         </h2>
                         <p class="vachanText"
                            style="margin: auto; line-height: 18px; font-size: 17px; letter-spacing: 0.5px">
-                            ‘Bearing this in mind, a devotee of God should strive to cultivate humility and should never
-                            insult anyone. Why? Because God also dwells in the hearts of the meek... Realizing this, one
-                            should not pain even the smallest of beings.’
+                            However, for a true renunciant both dirt and gold are equal. Moreover, a renunciant never
+                            makes distinctions by thinking, ‘This object is pleasant, and this object is unpleasant.’
                         </p>
                         <h2 class="vachanQuote"
                             style="color: yellow; font-size: 34px; line-height: 7px; margin: 4px 0 4px 0"><br><br>”
@@ -652,11 +596,6 @@
     </tr>
 </table>
 <!-- END LARGE PHOTO FEATURE -->
-<table role="presentation" width="100%" border="0" cellspacing="0" cellpadding="0" style="min-width:100%; ">
-    <tr>
-        <td style="font-size:1px; line-height:1px; height: 30px">&nbsp;</td>
-    </tr>
-</table>
 
 <!-- SECTION HEADER -->
 <table border="0" cellpadding="0" cellspacing="0" width="100%">
@@ -666,7 +605,7 @@
                 <tr>
                     <td align="center" style="padding:0">
                         <img src="https://drive.google.com/uc?id=1nHD1F1d7HpKmPrxKjNKJbxf433iIJ7PW" alt="What's New"
-                             style="width: 55%; max-width: 311px">
+                             style="width: 100%; max-width: 311px">
                     </td>
                 </tr>
             </table>
@@ -682,8 +621,145 @@
 It's direct child is <th class="newrow centered title"> to create a new section -->
 <table border="0" cellpadding="0" cellspacing="0" width="100%" bgcolor="#ffffff">
     <tr>
-        <td align="center" style="padding-bottom: 30px;">
+        <td align="center">
             <table border="0" cellpadding="0" cellspacing="0" class="responsivetable80" style="width: 80%;">
+                <tr>
+                    <th align="right" class="newrow centered title"
+                        style="font-family: CenturyGothic, AppleGothic, Gill Sans, Gill Sans MT, sans-serif,'GeoBrandBold';
+                                        font-size: 22px; line-height: 28px; text-transform: uppercase; letter-spacing: 3px;
+                                        padding-right: 15px; font-weight: 700; text-align: right">
+                        Gunbhavi Sampark - Weekly Story Series Launch (WK1)
+                    </th>
+                    <th align="left" class="newrow centered noborder paddingto20 "
+                        style="padding: 30px 0 30px 17px; border-left: 2px solid #ffcc00; max-width: 730px;">
+                        <table border="0" cellpadding="0" cellspacing="0" class="responsivetable">
+                            <tr>
+                                <td align="left" class="centered"
+                                    style="font-family: Helvetica,Arial,sans-serif; font-weight: normal; font-size: 16px; line-height:24px; padding-bottom: 8px; letter-spacing: .5px; color: #000000;">
+                                    <a style="text-decoration: none; color:#000000;" target="_blank">
+                                        As mentioned last week, we have developed a plan to reach out to gunbhavi
+                                        parents during COVID-19. Specifically, by compiling and sharing
+                                        bal-friendly/generic video clips from past shibirs (e.g., NC18) and our weekly
+                                        virtual sabhas, we can build goodwill with these gunbhavi families.
+                                        <!--                                        <img alt="Click Here" style="width: 20px; position: absolute; padding-left: 3px"-->
+                                        <!--                                             src="https://drive.google.com/uc?id=1BVfSmIVZDrkfikTU0FnDD0KbCoq4IdYR">-->
+                                    </a>
+                                </td>
+                            </tr>
+                        </table>
+                        <table border="0" cellpadding="0" cellspacing="0" class="responsivetable">
+                            <tr>
+                                <td align="left" class="centered"
+                                    style="font-family: Helvetica,Arial,sans-serif; font-weight: normal; font-size: 16px; line-height:24px; padding-bottom: 8px; letter-spacing: .5px; color: #000000;">
+                                    <a style="text-decoration: none; color:#000000;" target="_blank">
+                                        There is a five-week plan that consists of the following topics: Importance of
+                                        Prayer, Strength in Unity, Avoiding Bad Company, Never Giving Up, and Removing
+                                        Darkness in Our Life. Each of these videos will be sent with a short email that
+                                        recaps the message from the previous week’s video, and introduces the upcoming
+                                        video.The Parent Coordinator/Karyakars will drive this effort in each center.
+                                        <!--                                        <img alt="Click Here" style="width: 20px; position: absolute; padding-left: 3px"-->
+                                        <!--                                             src="https://drive.google.com/uc?id=1BVfSmIVZDrkfikTU0FnDD0KbCoq4IdYR">-->
+                                    </a>
+                                </td>
+                            </tr>
+                        </table>
+                        <table border="0" cellpadding="0" cellspacing="0" class="responsivetable">
+                            <tr>
+                                <td align="left" class="centered"
+                                    style="font-family: Helvetica,Arial,sans-serif; font-weight: normal; font-size: 16px; line-height:24px; padding-bottom: 8px; letter-spacing: .5px; color: #000000;">
+                                    <a href="http://bal.na.baps.org/karyakars/blog/2020/07/01/gunbhavi-sampark-weekly-story-series/"
+                                       style="text-decoration: none; color:#000000;" target="_blank">
+                                        Here you will find the email content and instructions for the first week.
+                                        Basically, use the suggested subject line, embed the PNG file, and attach the
+                                        PDF file to the email, then send!
+                                        <img alt="Click Here" style="width: 20px; position: absolute; padding-left: 3px"
+                                             src="https://drive.google.com/uc?id=1BVfSmIVZDrkfikTU0FnDD0KbCoq4IdYR">
+                                    </a>
+                                </td>
+                            </tr>
+                        </table>
+                    </th>
+                </tr>
+                <tr>
+                    <th align="right" class="newrow centered title"
+                        style="font-family: CenturyGothic, AppleGothic, Gill Sans, Gill Sans MT, sans-serif,'GeoBrandBold';
+                                        font-size: 22px; line-height: 28px; text-transform: uppercase; letter-spacing: 3px;
+                                        padding-right: 15px; font-weight: 700; text-align: right">
+                        2020 VIRTUAL SABHA SUMMARY
+                    </th>
+                    <th align="left" class="newrow centered noborder paddingto20 "
+                        style="padding: 30px 0 30px 17px; border-left: 2px solid #ffcc00; max-width: 730px;">
+                        <table border="0" cellpadding="0" cellspacing="0" class="responsivetable">
+                            <tr>
+                                <td align="left" class="centered"
+                                    style="font-family: Helvetica,Arial,sans-serif; font-weight: normal; font-size: 16px; line-height:24px; padding-bottom: 8px; letter-spacing: .5px; color: #000000;">
+                                    <a href="https://baps.box.com/s/c4xli1mgpz7dcj1r1qgsoqz1qcwbcsyr"
+                                       style="text-decoration: none; color:#000000;" target="_blank">
+                                        Please find the sabha summary for June 28th attached here. Parents and children
+                                        alike are encouraged to go through this document, complete the different
+                                        activities and challenges, and address the different discussion questions during
+                                        Ghar Sabha.
+                                        <img alt="Click Here" style="width: 20px; position: absolute; padding-left: 3px"
+                                             src="https://drive.google.com/uc?id=1BVfSmIVZDrkfikTU0FnDD0KbCoq4IdYR">
+                                    </a>
+                                </td>
+                            </tr>
+                        </table>
+                    </th>
+                </tr>
+                <tr>
+                    <th align="right" class="newrow centered title"
+                        style="font-family: CenturyGothic, AppleGothic, Gill Sans, Gill Sans MT, sans-serif,'GeoBrandBold';
+                                        font-size: 22px; line-height: 28px; text-transform: uppercase; letter-spacing: 3px;
+                                        padding-right: 15px; font-weight: 700; text-align: right">
+                        Bal Satsang Exam Registration - Begins July 1, 2020
+                    </th>
+                    <th align="left" class="newrow centered noborder paddingto20 "
+                        style="padding: 30px 0 30px 17px; border-left: 2px solid #ffcc00; max-width: 730px;">
+                        <table border="0" cellpadding="0" cellspacing="0" class="responsivetable">
+                            <tr>
+                                <td align="left" class="centered"
+                                    style="font-family: Helvetica,Arial,sans-serif; font-weight: normal; font-size: 16px; line-height:24px; padding-bottom: 8px; letter-spacing: .5px; color: #000000;">
+                                    <a href="https://baps.box.com/s/h0vot1rycx77gi6wjazj73pki3mrcity"
+                                       style="text-decoration: none; color:#000000;" target="_blank">
+                                        Please refer to the March 2020 Bal Exam Registration memo regarding registration
+                                        process and details.
+                                        <img alt="Click Here" style="width: 20px; position: absolute; padding-left: 3px"
+                                             src="https://drive.google.com/uc?id=1BVfSmIVZDrkfikTU0FnDD0KbCoq4IdYR">
+                                    </a>
+                                </td>
+                            </tr>
+                        </table>
+                        <table border="0" cellpadding="0" cellspacing="0" class="responsivetable">
+                            <tr>
+                                <td align="left" class="centered"
+                                    style="font-family: Helvetica,Arial,sans-serif; font-weight: normal; font-size: 16px; line-height:24px; padding-bottom: 8px; letter-spacing: .5px; color: #000000;">
+                                    <a style="text-decoration: none; color:#000000;" target="_blank">
+                                        All Regional PC Leads (RPCL) have recently reviewed Satsang Exam portal
+                                        credentials for their respective mandals. If you’re experiencing any
+                                        difficulties logging into your account, please contact your respective RPCL.
+                                        <!--                                        <img alt="Click Here" style="width: 20px; position: absolute; padding-left: 3px"-->
+                                        <!--                                             src="https://drive.google.com/uc?id=1BVfSmIVZDrkfikTU0FnDD0KbCoq4IdYR">-->
+                                    </a>
+                                </td>
+                            </tr>
+                        </table>
+                        <table border="0" cellpadding="0" cellspacing="0" class="responsivetable">
+                            <tr>
+                                <td align="left" class="centered"
+                                    style="font-family: Helvetica,Arial,sans-serif; font-weight: normal; font-size: 16px; line-height:24px; padding-bottom: 8px; letter-spacing: .5px; color: #000000;">
+                                    <a style="text-decoration: none; color:#000000;" target="_blank">
+                                        Bal Exam fee payment/collection details are to be determined at a later date,
+                                        please stay tuned for the update. Information will be shared as soon as it is
+                                        finalized.
+                                        <!--                                        <img alt="Click Here" style="width: 20px; position: absolute; padding-left: 3px"-->
+                                        <!--                                             src="https://drive.google.com/uc?id=1BVfSmIVZDrkfikTU0FnDD0KbCoq4IdYR">-->
+                                    </a>
+                                </td>
+                            </tr>
+                        </table>
+                    </th>
+                </tr>
                 <tr>
                     <th class="newrow centered title"
                         style="font-family: CenturyGothic, AppleGothic, Gill Sans, Gill Sans MT, sans-serif,'GeoBrandBold';
@@ -698,73 +774,11 @@ It's direct child is <th class="newrow centered title"> to create a new section 
                                 <td align="left" class="centered"
                                     style="font-family: Helvetica,Arial,sans-serif; font-weight: normal; font-size: 16px; line-height:24px; padding-bottom: 8px; letter-spacing: .5px; color: #000000;">
                                     <a style="text-decoration: none; color:#000000;"
-                                       href="https://baps.box.com/s/ugygr1vc6d0nqn7owr0qwagg7veqf6um" target="_blank">
+                                       href="https://baps.box.com/s/kmt6xc79zpqqecwf3n5udj08icxvmacv" target="_blank">
                                         Please read over the Post-Sabha Goshthi questions for the
-                                        <strong>May 31st</strong>
+                                        <strong>July 5th</strong>
                                         Kishore-Kishori Sabha. The questions are meant to help karyakars guide the post
                                         sabha goshthi discussion.
-                                        <img alt="Click Here" style="width: 20px; position: absolute; padding-left: 3px"
-                                             src="https://drive.google.com/uc?id=1BVfSmIVZDrkfikTU0FnDD0KbCoq4IdYR">
-                                    </a>
-                                </td>
-                            </tr>
-                        </table>
-                    </th>
-                </tr>
-                <tr>
-                    <th align="right" class="newrow centered title"
-                        style="font-family: CenturyGothic, AppleGothic, Gill Sans, Gill Sans MT, sans-serif,'GeoBrandBold';
-                        font-size: 22px; line-height: 28px; text-transform: uppercase; letter-spacing: 3px;
-                        padding-right: 15px; font-weight: 700; text-align: right">
-                        2020 VIRTUAL SABHA SUMMARY
-                    </th>
-                    <th align="left" class="newrow centered noborder paddingto20 "
-                        style="padding: 30px 0 30px 17px; border-left: 2px solid #ffcc00; max-width: 730px;">
-                        <table border="0" cellpadding="0" cellspacing="0" class="responsivetable">
-                            <tr>
-                                <td align="left" class="centered"
-                                    style="font-family: Helvetica,Arial,sans-serif; font-weight: normal; font-size: 16px; line-height:24px; padding-bottom: 8px; letter-spacing: .5px; color: #000000;">
-                                    <a href="https://baps.box.com/s/opfltuuwcp2q7ajf2hu5kwywydbi017t"
-                                       style="text-decoration: none; color:#000000;" target="_blank">
-                                        Please find the sabha summary for May 24th attached here. Parents and children
-                                        alike are encouraged to go through this document, complete the different
-                                        activities and challenges, and address the different discussion questions during
-                                        Ghar Sabha.
-                                        <img alt="Click Here" style="width: 20px; position: absolute; padding-left: 3px"
-                                             src="https://drive.google.com/uc?id=1BVfSmIVZDrkfikTU0FnDD0KbCoq4IdYR">
-                                    </a>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td align="left" class="centered"
-                                    style="font-family: Helvetica,Arial,sans-serif; font-weight: normal; font-size: 16px; line-height:24px; padding-bottom: 8px; letter-spacing: .5px; color: #000000;">
-                                    <a style="text-decoration: none; color:#000000;">
-                                        Please note that the Bhakti Challenge for this week is the Letters to Pramukh
-                                        Swami Maharaj project - as such, we won't be having balaks/balikas submit
-                                        responses via Typeform.
-                                    </a>
-                                </td>
-                            </tr>
-                        </table>
-                    </th>
-                </tr>
-                <tr>
-                    <th align="right" class="newrow centered title"
-                        style="font-family: CenturyGothic, AppleGothic, Gill Sans, Gill Sans MT, sans-serif,'GeoBrandBold';
-                        font-size: 22px; line-height: 28px; text-transform: uppercase; letter-spacing: 3px;
-                        padding-right: 15px; font-weight: 700; text-align: right">
-                        2020 Bal/Balika Sabha Primer
-                    </th>
-                    <th align="left" class="newrow centered noborder paddingto20 "
-                        style="padding: 30px 0 30px 17px; border-left: 2px solid #ffcc00; max-width: 730px;">
-                        <table border="0" cellpadding="0" cellspacing="0" class="responsivetable">
-                            <tr>
-                                <td align="left" class="centered"
-                                    style="font-family: Helvetica,Arial,sans-serif; font-weight: normal; font-size: 16px; line-height:24px; padding-bottom: 8px; letter-spacing: .5px; color: #000000;">
-                                    <a href="https://baps.box.com/s/hhje1gmf4it57aav5vqbct5bhqx42qtb"
-                                       style="text-decoration: none; color:#000000;" target="_blank">
-                                        Please share the media found here with all pre-existing communication channels
-                                        regarding this week's upcoming Bal/Balika Sabha.
                                         <img alt="Click Here" style="width: 20px; position: absolute; padding-left: 3px"
                                              src="https://drive.google.com/uc?id=1BVfSmIVZDrkfikTU0FnDD0KbCoq4IdYR">
                                     </a>
@@ -779,6 +793,196 @@ It's direct child is <th class="newrow centered title"> to create a new section 
 </table>
 <!-- END TEXT LINKS -->
 
+<!-- SECTION HEADER -->
+<!--Reminders and Updates-->
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+    <tr>
+        <td align="center">
+            <table border="0" cellpadding="0" cellspacing="0" class="responsivetable">
+                <tr>
+                    <td align="center" style="padding:0">
+                        <img src="https://drive.google.com/uc?id=1aeFKz5QFl1zkeSDiJN7HrMuTuavj16te"
+                             alt="Reminders & Updates" style="width: 100%; max-width: 311px">
+                    </td>
+                </tr>
+            </table>
+        </td>
+    </tr>
+</table>
+
+<table border="0" cellpadding="0" cellspacing="0" width="100%" bgcolor="#ffffff">
+    <tr>
+        <td align="center">
+            <table border="0" cellpadding="0" cellspacing="0" class="responsivetable80" style="width: 80%;">
+                <tr>
+                    <th class="newrow centered title"
+                        style="font-family: CenturyGothic, AppleGothic, Gill Sans, Gill Sans MT, sans-serif,'GeoBrandBold';
+                        font-size: 22px; line-height: 28px; text-transform: uppercase; letter-spacing: 3px;
+                        padding-right: 15px; font-weight: 700; text-align: right">
+                        2020 MUKHPATH ASSESSMENT
+                    </th>
+                    <th align="left" class="newrow centered noborder paddingto20 "
+                        style="padding: 30px 0 30px 17px; border-left: 2px solid #ffcc00; max-width: 730px;">
+                        <table border="0" cellpadding="0" cellspacing="0" class="responsivetable">
+                            <tr>
+                                <td align="left" class="centered"
+                                    style="font-family: Helvetica,Arial,sans-serif; font-weight: normal; font-size: 16px; line-height:24px; padding-bottom: 8px; letter-spacing: .5px; color: #000000;">
+                                    <a style="text-decoration: none; color:#000000;">
+                                        Mukhpath is essential to satsang growth and is something we place great
+                                        importance on in sabha. Although we cannot meet in-person, mukhpath can always
+                                        be practiced at home. For that reason, an at-home mukhpath assessment package is
+                                        now available.
+                                    </a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td align="left" class="centered"
+                                    style="font-family: Helvetica,Arial,sans-serif; font-weight: normal; font-size: 16px; line-height:24px; padding-bottom: 8px; letter-spacing: .5px; color: #000000;">
+                                    <a style="text-decoration: none; color:#000000;" target="_blank"
+                                       href="http://bal.na.baps.org/karyakars/blog/2020/06/23/2020-mukhpath-assessment/">
+                                        Mukhpath taught since last year’s exam up to mid-March this year is compiled
+                                        into a study guide for balaks/balikas to use. Along with the study guide, there
+                                        are self assessment tools (practice exam, answer sheet, and answer key) included
+                                        in the package to help balaks/balikas test their knowledge. Parents should
+                                        actively help their balaks/balikas review and study the mukhpath, then
+                                        administer the exam. No exams or scores will be collected. Further details can
+                                        be found in the ReadMe.
+                                        <img alt="Click Here" style="width: 20px; position: absolute; padding-left: 3px"
+                                             src="https://drive.google.com/uc?id=1BVfSmIVZDrkfikTU0FnDD0KbCoq4IdYR">
+                                    </a>
+                                </td>
+                            </tr>
+                        </table>
+                    </th>
+                </tr>
+                <tr>
+                    <th class="newrow centered title"
+                        style="font-family: CenturyGothic, AppleGothic, Gill Sans, Gill Sans MT, sans-serif,'GeoBrandBold';
+                        font-size: 22px; line-height: 28px; text-transform: uppercase; letter-spacing: 3px;
+                        padding-right: 15px; font-weight: 700; text-align: right">
+                        2020 BK Lets Get On The Same Page (LGOTSP)
+                    </th>
+                    <th align="left" class="newrow centered noborder paddingto20 "
+                        style="padding: 30px 0 30px 17px; border-left: 2px solid #ffcc00; max-width: 730px;">
+                        <table border="0" cellpadding="0" cellspacing="0" class="responsivetable">
+                            <tr>
+                                <td align="left" class="centered"
+                                    style="font-family: Helvetica,Arial,sans-serif; font-weight: normal; font-size: 16px; line-height:24px; padding-bottom: 8px; letter-spacing: .5px; color: #000000;">
+                                    <a style="text-decoration: none; color:#000000;" target="_blank"
+                                       href="http://bal.na.baps.org/karyakars/blog/2019/11/27/2020-lgotsp-term-documents/">
+                                        COVID-19 has brought about many changes in our Bal & Kishore pravrutti for the
+                                        year. This special LGOTSP document was created to help karyakars understand the
+                                        upcoming changes that have been made and what our responsibilities will be for
+                                        the remainder of the year. Please thoroughly read through the document.
+                                        <img alt="Click Here" style="width: 20px; position: absolute; padding-left: 3px"
+                                             src="https://drive.google.com/uc?id=1BVfSmIVZDrkfikTU0FnDD0KbCoq4IdYR">
+                                    </a>
+                                </td>
+                            </tr>
+                        </table>
+                    </th>
+                </tr>
+            </table>
+        </td>
+    </tr>
+</table>
+
+<!--Announcements-->
+<!--<table border="0" cellpadding="0" cellspacing="0" width="100%">-->
+<!--    <tr>-->
+<!--        <td align="center">-->
+<!--            <table border="0" cellpadding="0" cellspacing="0" class="responsivetable">-->
+<!--                <tr>-->
+<!--                    <td align="center" style="padding:0">-->
+<!--                        <img src="https://drive.google.com/uc?id=1NqjY-2NfLOvo5TBMxnpsTgILfEW5exBc"-->
+<!--                             alt="Announcements" style="width: 100%; max-width: 311px">-->
+<!--                    </td>-->
+<!--                </tr>-->
+<!--            </table>-->
+<!--        </td>-->
+<!--    </tr>-->
+<!--</table>-->
+
+<!--<table border="0" cellpadding="0" cellspacing="0" width="100%" bgcolor="#ffffff">-->
+<!--    <tr>-->
+<!--        <td align="center">-->
+<!--            <table border="0" cellpadding="0" cellspacing="0" class="responsivetable80" style="width: 80%;">-->
+<!--                <tr>-->
+<!--                    <th class="newrow centered title"-->
+<!--                        style="font-family: CenturyGothic, AppleGothic, Gill Sans, Gill Sans MT, sans-serif,'GeoBrandBold';-->
+<!--                        font-size: 22px; line-height: 28px; text-transform: uppercase; letter-spacing: 3px;-->
+<!--                        padding-right: 15px; font-weight: 700; text-align: right">-->
+<!--                        Aksharpith Magazine Subscription Process Change-->
+<!--                    </th>-->
+<!--                    <th align="left" class="newrow centered noborder paddingto20 "-->
+<!--                        style="padding: 30px 0 30px 17px; border-left: 2px solid #ffcc00; max-width: 730px;">-->
+<!--                        <table border="0" cellpadding="0" cellspacing="0" class="responsivetable">-->
+<!--                            <tr>-->
+<!--                                <td align="left" class="centered"-->
+<!--                                    style="font-family: Helvetica,Arial,sans-serif; font-weight: normal; font-size: 16px; line-height:24px; padding-bottom: 8px; letter-spacing: .5px; color: #000000;">-->
+<!--                                    <a style="text-decoration: none; color:#000000;">-->
+<!--                                        Please note the new process for <a href="https://magazines.baps.org/"-->
+<!--                                                                           target="_blank">Aksharpith Magazine</a>-->
+<!--                                        subscriptions. The-->
+<!--                                        subscription is moving to a website based subscription process.-->
+<!--                                    </a>-->
+<!--                                </td>-->
+<!--                            </tr>-->
+<!--                            <tr>-->
+<!--                                <td align="left" class="centered"-->
+<!--                                    style="font-family: Helvetica,Arial,sans-serif; font-weight: normal; font-size: 16px; line-height:24px; padding-bottom: 8px; letter-spacing: .5px; color: #000000;">-->
+<!--                                    <a style="text-decoration: none; color:#000000;">-->
+<!--                                        Beginning June 1:-->
+<!--                                        <ol>-->
+<!--                                            <li>The physical subscription forms will no longer be accepted.</li>-->
+<!--                                            <li>Subscribers will need to visit the website to sign up for a new-->
+<!--                                                subscription or link existing subscriptions.-->
+<!--                                            </li>-->
+<!--                                        </ol>-->
+<!--                                    </a>-->
+<!--                                </td>-->
+<!--                            </tr>-->
+<!--                            <tr>-->
+<!--                                <td align="left" class="centered"-->
+<!--                                    style="font-family: Helvetica,Arial,sans-serif; font-weight: normal; font-size: 16px; line-height:24px; padding-bottom: 8px; letter-spacing: .5px; color: #000000;">-->
+<!--                                    <a style="text-decoration: none; color:#000000;">-->
+<!--                                        Frequently Asked Questions (FAQs):-->
+<!--                                        <ol>-->
+<!--                                            <li>-->
+<!--                                                Who to contact for questions about existing subscriptions?<br>-->
+<!--                                                <i>Mandir’s Subscription Coordinator or email directly to-->
+<!--                                                    <a href="mailto:magazines@in.baps.org">magazines@in.baps.org</a>-->
+<!--                                                </i>-->
+<!--                                            </li>-->
+<!--                                            <li>-->
+<!--                                                How to sign up for a new subscription on the website?<br>-->
+<!--                                                <i>Create an account using the website and click on the “New-->
+<!--                                                   Subscription” on the home page and enter your-->
+<!--                                                   shipping/billing/payment details on consecutive screens and it is-->
+<!--                                                   done. You would receive a confirmation both as a text on the screen-->
+<!--                                                   as well as via mail.</i>-->
+<!--                                            </li>-->
+<!--                                            <li>-->
+<!--                                                Is there a way to accept cash for new/existing subscriptions?<br>-->
+<!--                                                <i>No, going forward only credit card/ bank cards will be accepted for-->
+<!--                                                   signing up on the website.</i>-->
+<!--                                            </li>-->
+<!--                                            <li>-->
+<!--                                                What magazines can be subscribed to?<br>-->
+<!--                                                <i>Swaminarayan Prakash (Gujarati & Hindi), Premvati, Bal Prakash-->
+<!--                                                   (Gujarati & English) and Swaminarayan Bliss</i>-->
+<!--                                            </li>-->
+<!--                                        </ol>-->
+<!--                                    </a>-->
+<!--                                </td>-->
+<!--                            </tr>-->
+<!--                        </table>-->
+<!--                    </th>-->
+<!--                </tr>-->
+<!--            </table>-->
+<!--        </td>-->
+<!--    </tr>-->
+<!--</table>-->
 
 <!-- Large Spacing-->
 <table role="presentation" width="100%" border="0" cellspacing="0" cellpadding="0" style="min-width:100%; ">

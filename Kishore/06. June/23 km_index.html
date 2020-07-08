@@ -8,7 +8,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Alice&family=Lora:ital@0;1&family=Merienda&family=Roboto:wght@300;400;500&display=swap"
           rel="stylesheet">
     <title>
-        Bal-Balika Digest
+        Kishore-Kishori Digest
     </title>
     <style type="text/css">
         /* CLIENT STYLES */
@@ -88,7 +88,7 @@
         }
 
         .title {
-            width: 175px;
+            width: 37%;
             vertical-align: top;
             padding-top: 33px;
             color: #656565;
@@ -195,13 +195,34 @@
         }
     </style>
     <style>
-        .pimg {
+        .imgMoment {
             display: block;
             border: none;
             -ms-interpolation-mode: bicubic;
-            object-fit: cover;
-            height: 45vh;
             max-width: 100%;
+            width: 100%;
+        }
+
+        .imgMomentTd {
+            line-height: 0;
+        }
+
+        .html-body {
+            background-color: #ffffff;
+            font-family: sans-serif;
+            -webkit-font-smoothing: antialiased;
+            font-size: 14px;
+            line-height: 1.4;
+            margin: 0;
+            padding: 0;
+            -ms-text-size-adjust: 100%;
+            -webkit-text-size-adjust: 100%;
+        }
+
+        table td {
+            font-family: sans-serif;
+            font-size: 14px;
+            vertical-align: top;
         }
 
         .bodyMoment {
@@ -212,10 +233,11 @@
         /* Set a max-width, and make it display as block so it will automatically stretch to that width, but will also shrink down on a phone or something */
         .containerMoment {
             display: block;
-            margin: 0 auto !important; /* makes it centered */
-            /* max-width: 600px;
-            padding: 10px; */
-            max-width: 800px;
+            margin: 0 auto !important;
+            /* makes it centered */
+            max-width: 1000px;
+            /*padding: 10px;*/
+            width: 100%;
         }
 
         /* This should also be a block element, so that it will fill 100% of the .container */
@@ -223,7 +245,7 @@
             box-sizing: border-box;
             display: block;
             margin: 0 auto;
-            padding: 10px;
+            /*padding: 10px;*/
         }
 
         /* -------------------------------------
@@ -237,33 +259,7 @@
 
         .wrapperMoment {
             box-sizing: border-box;
-            padding: 0px;
-        }
-
-        .content-block {
-            padding-bottom: 10px;
-            padding-top: 10px;
-        }
-
-        .footer {
-            clear: both;
-            margin-top: 10px;
-            text-align: center;
-            width: 100%;
-        }
-
-        .footer td,
-        .footer p,
-        .footer span,
-        .footer a {
-            color: #999999;
-            font-size: 12px;
-            text-align: center;
-        }
-
-        .ptext {
-            list-style-position: inside;
-            margin-left: 5px;
+            padding: 0;
         }
 
         .preheaderMoment {
@@ -279,34 +275,10 @@
             width: 0;
         }
 
-        .powered-by .pa {
-            text-decoration: none;
-        }
-
-        hr {
-            border: 0;
-            border-bottom: 1px solid #f6f6f6;
-            margin: 20px 0;
-        }
-
         /* -------------------------------------
             RESPONSIVE AND MOBILE FRIENDLY STYLES
         ------------------------------------- */
         @media only screen and (max-width: 620px) {
-            table[class=bodyMoment] h1 {
-                font-size: 28px !important;
-                margin-bottom: 10px !important;
-            }
-
-            table[class=bodyMoment] p,
-            table[class=bodyMoment] ul,
-            table[class=bodyMoment] ol,
-            table[class=bodyMoment] td,
-            table[class=bodyMoment] span,
-            table[class=bodyMoment] a {
-                font-size: 16px !important;
-            }
-
             table[class=bodyMoment] .wrapperMoment,
             table[class=bodyMoment] .article {
                 padding: 0px !important;
@@ -335,24 +307,9 @@
                 width: 100% !important;
             }
 
-            table[class=bodyMoment] .img-responsive {
-                height: auto !important;
-                max-width: 100% !important;
-                width: auto !important;
-            }
-
-            .headerMoment > p.title {
+            .headerTitleMoment {
                 font-size: 30px !important;
                 line-height: 34px !important;
-            }
-
-            .headerMoment > p.subtitle {
-                font-size: 18px !important;
-                line-height: 22px !important;
-            }
-
-            .carousel-image-wrapper {
-                height: 380px !important;
             }
         }
 
@@ -360,11 +317,6 @@
             PRESERVE THESE STYLES IN THE HEAD
         ------------------------------------- */
         @media all {
-            .ExternalClass {
-                width: 100%;
-            }
-
-            .ExternalClass,
             .ExternalClass p,
             .ExternalClass span,
             .ExternalClass font,
@@ -404,17 +356,11 @@
         /* -------------------------------------
             CONTENT
         ------------------------------------- */
-        .ptext {
-            font-family: 'Lora', sans-serif;
-            font-size: 18px;
-            line-height: 24px;
-        }
-
 
         .imageTextMoment {
             box-sizing: border-box;
             padding: 20px;
-            font-size: 18px;
+            font-size: 16px;
         }
 
         .headerMoment {
@@ -423,9 +369,9 @@
             padding: 20px;
         }
 
-        .title {
+        .headerTitleMoment {
             display: block;
-            font-family: 'Roboto', sans-serif;
+            font-family: 'Roboto', serif;
             font-size: 40px;
             font-weight: bold;
             line-height: 40px;
@@ -437,7 +383,7 @@
             color: #f5eedc;
             background-color: #e34748;
             box-sizing: border-box;
-            font-family: 'Roboto', sans-serif;
+            font-family: 'Roboto', serif;
             font-size: 20px;
             line-height: 24px;
             padding: 20px;
@@ -450,7 +396,7 @@
         }
 
         .whiteBgMoment {
-            background-color: white;
+            background-color: #ecf0f1;
             color: #e34748;
         }
 
@@ -572,14 +518,13 @@
                 <tr>
                     <td align="center"
                         style="font-family: CenturyGothic, AppleGothic, Gill Sans, Gill Sans MT, sans-serif,'GeoBrandRegular'; font-size: 11px; line-height: 12px; text-transform: uppercase; letter-spacing: 2px; color: #000000;">
-                        Week
-                        21
+                        Week 26
                     </td>
                 </tr>
                 <tr>
                     <td align="center">
-                        <img alt="Bal-Balika Karyakar Digest" class="full_imgtitle"
-                             src="https://drive.google.com/uc?id=194PM5Ssrbjqvush1c4CR096oyDDOdT67"
+                        <img alt="Kishore-Kishori Karyakar Digest" class="full_imgtitle"
+                             src="https://drive.google.com/uc?id=1QZfChOmFMxVszsek0KPZvRJTlEj921tD"
                              style="color: #000000; font-family:Helvetica,Arial,sans-serif; width: 410px">
                     </td>
                 </tr>
@@ -587,7 +532,7 @@
                     <td align="center" style="padding-bottom: 10px">
                         <img alt="Digest Header"
                              src="https://drive.google.com/uc?id=14O6nVQMy85myvbcgffUqBPVCV5GpYTs7"
-                             style="color: #000000; font-family:Helvetica,Arial,sans-serif; height: auto; width: 100vw; max-width: 265px">
+                             style="color: #000000; font-family:Helvetica,Arial,sans-serif; height: auto; width: 100%; max-width: 265px">
                     </td>
                 </tr>
                 <tr>
@@ -620,7 +565,7 @@
                                             <td align="center" class="headlinefont"
                                                 style="background-color: black; font-family: Helvetica,Arial,sans-serif; font-weight: 700; font-size: 24px; line-height: 34px; letter-spacing: .3px;">
                                                 <p class="vachanText" style="margin: 0; background-color: black">
-                                                    Sārangpur 3
+                                                    Gadhadā I - 16
                                                 </p>
                                             </td>
                                         </tr>
@@ -638,8 +583,10 @@
                         </h2>
                         <p class="vachanText"
                            style="margin: auto; line-height: 18px; font-size: 17px; letter-spacing: 0.5px">
-                            ‘Therefore, if one continously engages in ‘manan’ and ‘nididhyas’ after doing darshan of God
-                            and listening to his talks, then one will attain ‘sakshatkar’ of them.
+                            A wise devotee of God who can discern between sat and asat identifies the flaws within
+                            himself and thoughtfully eradicates them. He also rejects any apparent flaws he perceives in
+                            the Sant or a satsangi and imbibes only their virtues. Moreover, he never perceives any
+                            faults whatsoever in God.
                         </p>
                         <h2 class="vachanQuote"
                             style="color: yellow; font-size: 34px; line-height: 7px; margin: 4px 0 4px 0"><br><br>”
@@ -651,11 +598,6 @@
     </tr>
 </table>
 <!-- END LARGE PHOTO FEATURE -->
-<table role="presentation" width="100%" border="0" cellspacing="0" cellpadding="0" style="min-width:100%; ">
-    <tr>
-        <td style="font-size:1px; line-height:1px; height: 30px">&nbsp;</td>
-    </tr>
-</table>
 
 <!-- SECTION HEADER -->
 <table border="0" cellpadding="0" cellspacing="0" width="100%">
@@ -665,7 +607,7 @@
                 <tr>
                     <td align="center" style="padding:0">
                         <img src="https://drive.google.com/uc?id=1nHD1F1d7HpKmPrxKjNKJbxf433iIJ7PW" alt="What's New"
-                             style="width: 55vw; max-width: 311px">
+                             style="width: 100%; max-width: 311px">
                     </td>
                 </tr>
             </table>
@@ -677,42 +619,31 @@
 
 
 <!-- TEXT LINKS -->
+<!-- Copy and paste the second level tr like shown to add a new section.
+It's direct child is <th class="newrow centered title"> to create a new section -->
 <table border="0" cellpadding="0" cellspacing="0" width="100%" bgcolor="#ffffff">
     <tr>
-        <td align="center" style="padding-bottom: 30px;">
-            <table border="0" cellpadding="0" cellspacing="0" class="responsivetable80" style="width: 640px;"
-                   width="640">
+        <td align="center">
+            <table border="0" cellpadding="0" cellspacing="0" class="responsivetable80" style="width: 80%;">
                 <tr>
                     <th class="newrow centered title"
                         style="font-family: CenturyGothic, AppleGothic, Gill Sans, Gill Sans MT, sans-serif,'GeoBrandBold';
                         font-size: 22px; line-height: 28px; text-transform: uppercase; letter-spacing: 3px;
                         padding-right: 15px; font-weight: 700; text-align: right">
-                        2020 Virtual Karyakar Goshthi: Divyanand
+                        2020 BK Lets Get On The Same Page (LGOTSP)
                     </th>
                     <th align="left" class="newrow centered noborder paddingto20 "
-                        style="padding: 30px 0 30px 17px; border-left: 2px solid #ffcc00;">
+                        style="padding: 30px 0 30px 17px; border-left: 2px solid #ffcc00; max-width: 730px;">
                         <table border="0" cellpadding="0" cellspacing="0" class="responsivetable">
                             <tr>
                                 <td align="left" class="centered"
                                     style="font-family: Helvetica,Arial,sans-serif; font-weight: normal; font-size: 16px; line-height:24px; padding-bottom: 8px; letter-spacing: .5px; color: #000000;">
-                                    <a style="text-decoration: none; color:#000000;">
-                                        Divyanand: Mahant Swami Maharaj references the following quote from Purushottam
-                                        Bolya Prite often: “Bhagwanne bhajta sarve harijan divya chhe. A marm je koi
-                                        samje, dhare, vichare, te magan thai jay chhe, jag jiti jay chhe ane athe pahor
-                                        teno anand talto nathi.”
-                                    </a>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td align="left" class="centered"
-                                    style="font-family: Helvetica,Arial,sans-serif; font-weight: normal; font-size: 16px; line-height:24px; padding-bottom: 8px; letter-spacing: .5px; color: #000000;">
-                                    <a href="http://bal.na.baps.org/karyakars/blog/2020/01/01/2020-monthly-karyakar-goshthi/"
-                                       style="text-decoration: none; color:#000000;" target="_blank">
-                                        Understanding all to be divya is the only means to
-                                        experiencing the highest form of happiness. How can we constantly maintain
-                                        divyabhav in Bhagwan, the Sant, their niyams, the sanstha as well as in all
-                                        santo-haribhakto? If we can master this skill, nothing is left to perform to
-                                        experience constant happiness forever.
+                                    <a style="text-decoration: none; color:#000000;" target="_blank"
+                                       href="http://kishore.na.baps.org/karyakars/?p=3743">
+                                        COVID-19 has brought about many changes in our Bal & Kishore pravrutti for the
+                                        year. This special LGOTSP document was created to help karyakars understand the
+                                        upcoming changes that have been made and what our responsibilities will be for
+                                        the remainder of the year. Please thoroughly read through the document.
                                         <img alt="Click Here" style="width: 20px; position: absolute; padding-left: 3px"
                                              src="https://drive.google.com/uc?id=1BVfSmIVZDrkfikTU0FnDD0KbCoq4IdYR">
                                     </a>
@@ -722,24 +653,48 @@
                     </th>
                 </tr>
                 <tr>
-                    <th align="right" class="newrow centered title"
+                    <th class="newrow centered title"
                         style="font-family: CenturyGothic, AppleGothic, Gill Sans, Gill Sans MT, sans-serif,'GeoBrandBold';
                         font-size: 22px; line-height: 28px; text-transform: uppercase; letter-spacing: 3px;
                         padding-right: 15px; font-weight: 700; text-align: right">
-                        2020 Virtual Group 3 Post Sabha Goshthi
+                        2020 Virtual BK Karyakar Goshthi - July
                     </th>
                     <th align="left" class="newrow centered noborder paddingto20 "
-                        style="padding: 30px 0 30px 17px; border-left: 2px solid #ffcc00;">
+                        style="padding: 30px 0 30px 17px; border-left: 2px solid #ffcc00; max-width: 730px;">
                         <table border="0" cellpadding="0" cellspacing="0" class="responsivetable">
                             <tr>
                                 <td align="left" class="centered"
                                     style="font-family: Helvetica,Arial,sans-serif; font-weight: normal; font-size: 16px; line-height:24px; padding-bottom: 8px; letter-spacing: .5px; color: #000000;">
-                                    <a href="https://baps.box.com/s/sf9ipdlwkpn0418ohg4teosetktemnwl"
+                                    <a href="http://kishore.na.baps.org/karyakars/?p=3770"
                                        style="text-decoration: none; color:#000000;" target="_blank">
+                                        The July Goshthi package is now available for download. The topic is Niramanand.
+                                        <img alt="Click Here" style="width: 20px; position: absolute; padding-left: 3px"
+                                             src="https://drive.google.com/uc?id=1BVfSmIVZDrkfikTU0FnDD0KbCoq4IdYR">
+                                    </a>
+                                </td>
+                            </tr>
+                        </table>
+                    </th>
+                </tr>
+                <tr>
+                    <th class="newrow centered title"
+                        style="font-family: CenturyGothic, AppleGothic, Gill Sans, Gill Sans MT, sans-serif,'GeoBrandBold';
+                        font-size: 22px; line-height: 28px; text-transform: uppercase; letter-spacing: 3px;
+                        padding-right: 15px; font-weight: 700; text-align: right">
+                        2020 VIRTUAL POST SABHA GOSHTHI
+                    </th>
+                    <th align="left" class="newrow centered noborder paddingto20 "
+                        style="padding: 30px 0 30px 17px; border-left: 2px solid #ffcc00; max-width: 730px;">
+                        <table border="0" cellpadding="0" cellspacing="0" class="responsivetable">
+                            <tr>
+                                <td align="left" class="centered"
+                                    style="font-family: Helvetica,Arial,sans-serif; font-weight: normal; font-size: 16px; line-height:24px; padding-bottom: 8px; letter-spacing: .5px; color: #000000;">
+                                    <a style="text-decoration: none; color:#000000;"
+                                       href="https://baps.box.com/s/5e94jskpdr3oz6nfl0v7miz2udeua7y3" target="_blank">
                                         Please read over the Post-Sabha Goshthi questions for the
-                                        <strong>May 24th</strong>
-                                        Virtual Kishore-Kishori Sabha. The questions are meant to help karyakars guide
-                                        the post sabha goshthi discussion.
+                                        <strong>June 28st</strong>
+                                        Kishore-Kishori Sabha. The questions are meant to help karyakars guide the post
+                                        sabha goshthi discussion.
                                         <img alt="Click Here" style="width: 20px; position: absolute; padding-left: 3px"
                                              src="https://drive.google.com/uc?id=1BVfSmIVZDrkfikTU0FnDD0KbCoq4IdYR">
                                     </a>
@@ -753,142 +708,111 @@
     </tr>
 </table>
 <!-- END TEXT LINKS -->
-<span class="preheader">Your monthly Prasang Manan subscription!</span>
-<table role="presentation" border="0" cellpadding="0" cellspacing="0" class="body">
+
+<!-- SECTION HEADER -->
+<!--Reminders and Updates-->
+<!--<table border="0" cellpadding="0" cellspacing="0" width="100%">-->
+<!--    <tr>-->
+<!--        <td align="center">-->
+<!--            <table border="0" cellpadding="0" cellspacing="0" class="responsivetable">-->
+<!--                <tr>-->
+<!--                    <td align="center" style="padding:0">-->
+<!--                        <img src="https://drive.google.com/uc?id=1aeFKz5QFl1zkeSDiJN7HrMuTuavj16te"-->
+<!--                             alt="Reminders & Updates" style="width: 100%; max-width: 311px">-->
+<!--                    </td>-->
+<!--                </tr>-->
+<!--            </table>-->
+<!--        </td>-->
+<!--    </tr>-->
+<!--</table>-->
+
+<!--<table border="0" cellpadding="0" cellspacing="0" width="100%">-->
+<!--    <tr>-->
+<!--        <td align="center">-->
+<!--            <table border="0" cellpadding="0" cellspacing="0" class="responsivetable80" style="width: 80%;">-->
+<!--                <tr>-->
+<!--                    <th class="newrow centered title"-->
+<!--                        style="font-family: CenturyGothic, AppleGothic, Gill Sans, Gill Sans MT, sans-serif,'GeoBrandBold';-->
+<!--                        font-size: 22px; line-height: 28px; text-transform: uppercase; letter-spacing: 3px;-->
+<!--                        padding-right: 15px; font-weight: 700; text-align: right">-->
+<!--                        2020 BK Graduation Sabha Packet-->
+<!--                    </th>-->
+<!--                    <th align="left" class="newrow centered noborder paddingto20 "-->
+<!--                        style="padding: 30px 0 30px 17px; border-left: 2px solid #ffcc00; max-width: 730px;">-->
+<!--                        <table border="0" cellpadding="0" cellspacing="0" class="responsivetable">-->
+<!--                            <tr>-->
+<!--                                <td align="left" class="centered"-->
+<!--                                    style="font-family: Helvetica,Arial,sans-serif; font-weight: normal; font-size: 16px; line-height:24px; padding-bottom: 8px; letter-spacing: .5px; color: #000000;">-->
+<!--                                    <a style="text-decoration: none; color:#000000;" target="_blank"-->
+<!--                                       href="http://kishore.na.baps.org/karyakars/?p=3838">-->
+<!--                                        For centers who have not held Graduation Sabha yet, an updated ashirvad from-->
+<!--                                        Mahant Swami Maharaj is now available on the portal.-->
+<!--                                        <img alt="Click Here" style="width: 20px; position: absolute; padding-left: 3px"-->
+<!--                                             src="https://drive.google.com/uc?id=1BVfSmIVZDrkfikTU0FnDD0KbCoq4IdYR">-->
+<!--                                    </a>-->
+<!--                                </td>-->
+<!--                            </tr>-->
+<!--                        </table>-->
+<!--                    </th>-->
+<!--                </tr>-->
+<!--            </table>-->
+<!--        </td>-->
+<!--    </tr>-->
+<!--</table>-->
+
+<!--Announcements-->
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
     <tr>
-        <td>&nbsp;&nbsp;</td>
-        <td class="container">
-            <div class="content">
-
-                <!-- START CENTERED WHITE CONTAINER -->
-                <table role="presentation" class="main">
-
-                    <!-- START MAIN CONTENT AREA -->
-                    <tr>
-                        <td class="wrapper">
-                            <table role="presentation" border="0" cellpadding="0" cellspacing="0">
-                                <tr>
-                                    <td>
-                                        <div class="header">
-                                            <p class="title ptext" style="width: 100%">
-                                                PARAM ANAND MOMENT
-                                            </p>
-                                        </div>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>
-                                        <div class="quote">
-                                            “The wish of Maharaj and Bapa prevails. So, one should remain happy.”
-                                        </div>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>
-                                        <img class="pimg" width="100%"
-                                             src="https://baps.box.com/shared/static/034zthxmiowj7wt4seg2201zhbrywip6.jpg"/>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td class="teal-bg image-text">
-                                        On 25 January 1974, Pramukh Swami Maharaj departed with
-                                        nine sadhus amid a joyous farewell for his first Satsang
-                                        tour abroad since becoming our Guru in 1971. The plane
-                                        took off from Mumbai at 10:15 am and landed in Nairobi
-                                        at 1:22 pm. All the passengers disembarked but Pramukh
-                                        Swami Maharaj and the sadhus were ordered to stay aboard.
-                                        Then at 4:15 pm, without any reason, they were instructed
-                                        to fly back to Mumbai. Everyone in the group was saddened
-                                        by the unexpected order to return.
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>
-                                        <img class="pimg" width="100%"
-                                             src="https://baps.box.com/shared/static/0ds9u5ern6lsst90ejk9id530lwhkph7.jpg"/>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td class="white-bg image-text">
-                                        When Bhaktipriya Swami
-                                        (Kothari Swami) gave his diary to Swamishri during their
-                                        flight back to Mumbai, he wrote, "The wish of Maharaj
-                                        and Bapa (Yogiji Maharaj) prevails. So, one should remain
-                                        happy. Accept the ways they desire for you. Do not be
-                                        pained or become miserable. Become Aksharrup and offer
-                                        devotion to God, then one will not be miserable."
-                                        At 2:45 am Swamishri arrived in Mumbai. After reaching
-                                        the Swaminarayan Mandir he prostrated to Thakorji,
-                                        Swamishri asked for His forgiveness in not being able
-                                        to offer Him food during their return journey to Mumbai.
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>
-                                        <img class="pimg" width="100%"
-                                             src="https://baps.box.com/shared/static/z6wgrtu4caejxy5qhpqd5j86z79bb8xi.jpg"/>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td class="teal-bg image-text">
-                                        Swamishri then had a fresh meal prepared at night and
-                                        offered it to Thakorji while singing thal. Swamishri was not concerned about the
-                                        insult and the
-                                        disrespectful manner of being sent back, but rather
-                                        concerned about Thakorji who had not been offered any
-                                        food. The next day Swamishri discoursed in a happy manner,
-                                        inspiring laughter and joy in all the sadhus and devotees,
-                                        thus making them forget the misery of him being sent back.
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td class="orange-bg image-text">
-                                        Despite facing adverse situations, Swamishri consistently
-                                        adhered to maintaining an aura of peace around him. Not once
-                                        during this time of adversity did he become bitter, irritated,
-                                        or question the circumstances of what had occurred. Understanding
-                                        that this was all due to Maharaj’s wish, he remained unphased
-                                        by this otherwise dreadful situation.
-                                        <br/><br/>
-                                        During times of difficulty, I find myself thinking ill of others,
-                                        or blaming circumstances or other factors/people for the
-                                        situation I am in. However, it’s most important that in these
-                                        moments, I force a pause on all these thoughts clouding my
-                                        judgment and clear my mind. I can recall many times in my life
-                                        either in school, work, or seva where I let the smallest of
-                                        irritants disturb my mood causing me to feel distressed throughout the day.
-                                        <br/><br/>
-                                        Somedays, I might not get my morning coffee, or get thrown a
-                                        last-minute assignment at school or work, or get told that a
-                                        seva task I had already completed needs to be re- done. Reading
-                                        this now, you may think these moments of inconvenience seem trivial.
-                                        But, in the moment, these small disturbances and others can
-                                        create a fury of mental anguish.
-                                        <br/><br/>
-                                        However, after a grand send-off preparing Swamishri to embark
-                                        on his first satsang tour outside of India, he came back without
-                                        placing a single foot off the plane. Through this normally humiliating
-                                        ordeal, Swamishri remained ever blissful, understanding Maharaj and
-                                        Swami to be Sarva-Karta (all-doer). The next time we feel like
-                                        our day cannot get any worse, let’s remember this prasang of
-                                        Pramukh Swami Maharaj and his Sarva- Karta no vichar.
-                                        </p>
-                                    </td>
-                                </tr>
-                            </table>
-                        </td>
-                    </tr>
-
-                    <!-- END MAIN CONTENT AREA -->
-                </table>
-                <!-- END CENTERED WHITE CONTAINER -->
-
-            </div>
+        <td align="center">
+            <table border="0" cellpadding="0" cellspacing="0" class="responsivetable">
+                <tr>
+                    <td align="center" style="padding:0">
+                        <img src="https://drive.google.com/uc?id=1NqjY-2NfLOvo5TBMxnpsTgILfEW5exBc"
+                             alt="Announcements" style="width: 100%; max-width: 311px">
+                    </td>
+                </tr>
+            </table>
         </td>
-        <td>&nbsp;&nbsp;</td>
     </tr>
 </table>
 
+<table border="0" cellpadding="0" cellspacing="0" width="100%" bgcolor="#ffffff">
+    <tr>
+        <td align="center">
+            <table border="0" cellpadding="0" cellspacing="0" class="responsivetable80" style="width: 80%;">
+                <tr>
+                    <th class="newrow centered title"
+                        style="font-family: CenturyGothic, AppleGothic, Gill Sans, Gill Sans MT, sans-serif,'GeoBrandBold';
+                        font-size: 22px; line-height: 28px; text-transform: uppercase; letter-spacing: 3px;
+                        padding-right: 15px; font-weight: 700; text-align: right">
+                        Satsang Exam Timeline
+                    </th>
+                    <th align="left" class="newrow centered noborder paddingto20 "
+                        style="padding: 30px 0 30px 17px; border-left: 2px solid #ffcc00; max-width: 730px;">
+                        <table border="0" cellpadding="0" cellspacing="0" class="responsivetable">
+                            <tr>
+                                <td align="left" class="centered"
+                                    style="font-family: Helvetica,Arial,sans-serif; font-weight: normal; font-size: 16px; line-height:24px; padding-bottom: 8px; letter-spacing: .5px; color: #000000;">
+                                    <a style="text-decoration: none; color:#000000;">
+                                        2021 Satsang Exam registration is open.  Please see timeline below:
+                                    </a>
+                                </td>
+                            </tr>
+                        </table>
+                        <table border="0" cellpadding="0" cellspacing="0" class="responsivetable">
+                            <tr>
+                                <td align="left" class="centered"
+                                    style="font-family: Helvetica,Arial,sans-serif; font-weight: normal; font-size: 16px; line-height:24px; padding-bottom: 8px; letter-spacing: .5px; color: #000000;">
+                                    <img src="http://kishore.na.baps.org/websites/emaildigest/2020/june/23/2020_satsang_exam_timeline.jpg" alt="Satsang Exam Timeline" />
+                                </td>
+                            </tr>
+                        </table>
+                    </th>
+                </tr>
+            </table>
+        </td>
+    </tr>
+</table>
 
 <!-- Large Spacing-->
 <table role="presentation" width="100%" border="0" cellspacing="0" cellpadding="0" style="min-width:100%; ">
@@ -958,7 +882,7 @@
                     <td align="center">
                         <img alt="Footer"
                              src="https://drive.google.com/uc?id=1zJRYMluBqdXwWdayNC1FG84h2sYhuK-1"
-                             style="color: #000000; font-family:Helvetica,Arial,sans-serif; width: 100vw; max-width: 1100px">
+                             style="color: #000000; font-family:Helvetica,Arial,sans-serif; width: 100%; max-width: 1100px">
                     </td>
                 </tr>
             </table>
